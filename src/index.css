@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: white;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.card {
+  width: 350px;
+  min-height: 280px;
+
+  background: white;
+
+  border-radius: 25px;
+
+  padding: 45px;
+
+  text-align: center;
+
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+
+  box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+.survey-card {
+  background: #fff0b8;
+}
+
+.survey-btn {
+  background: #f58c50;
+
+  color: white;
+
+  border: none;
+
+  padding: 12px 25px;
+
+  border-radius: 25px;
+
+  cursor: pointer;
+
+  margin-top: 15px;
+}
