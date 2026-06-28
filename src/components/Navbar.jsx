@@ -1,30 +1,17 @@
 import logo from "../assets/logo.jpeg";
 import { Link } from "react-router-dom";
+import "./Navigation.css"; // Import the responsive stylesheet
 
 function Navbar() {
   return (
-    <nav
-      style={{
-        display: "flex",
-        justifyContent: "space-between",
-        alignItems: "center",
-        padding: "12px 80px",
-        backgroundColor: "#fff",
-        minHeight: "75px",
-        borderBottom: "1px solid #f0f0f0",
-        boxShadow: "0 2px 10px rgba(0,0,0,0.05)",
-        position: "sticky",
-        top: 0,
-        zIndex: 1000,
-      }}
-    >
+    <nav className="navbar">
       {/* Logo */}
       <Link to="/">
         <img
           src={logo}
           alt="Kinderly"
           style={{
-            height: "70px",
+            height: "60px", // Slightly reduced height to fit compact spaces better
             width: "auto",
             objectFit: "contain",
             cursor: "pointer",
@@ -33,13 +20,7 @@ function Navbar() {
       </Link>
 
       {/* Navigation */}
-      <div
-        style={{
-          display: "flex",
-          gap: "30px",
-          alignItems: "center",
-        }}
-      >
+      <div className="nav-menu">
         <Link
           to="/"
           className="nav-link"
@@ -76,12 +57,7 @@ function Navbar() {
           Contact
         </Link>
 
-        <Link
-          to="/survey"
-          style={{
-            textDecoration: "none",
-          }}
-        >
+        <Link to="/survey" style={{ textDecoration: "none" }}>
           <button
             style={{
               backgroundColor: "#f58c50",
@@ -89,8 +65,8 @@ function Navbar() {
               border: "none",
               borderRadius: "30px",
               cursor: "pointer",
-              padding: "14px 30px",
-              fontSize: "16px",
+              padding: "10px 24px", // Streamlined button spacing
+              fontSize: "15px",
               fontWeight: "600",
               boxShadow: "0 4px 12px rgba(245,140,80,0.25)",
             }}

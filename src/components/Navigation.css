@@ -1,0 +1,124 @@
+/* --- NAVBAR STYLES --- */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 80px;
+  background-color: #fff;
+  min-height: 75px;
+  border-bottom: 1px solid #f0f0f0;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+/* --- FOOTER STYLES --- */
+.footer {
+  background-color: #fff;
+  border-top: 1px solid #f0f0f0;
+  padding: 60px 80px 20px 80px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-links, .footer-social {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer-links h4, .footer-social h4 {
+  margin: 0 0 8px 0;
+  color: #222;
+  font-size: 18px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #555;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+  color: #f58c50;
+}
+
+.social-icons {
+  display: flex;
+  gap: 18px;
+  font-size: 22px;
+  color: #555;
+  cursor: pointer;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid #f0f0f0;
+  color: #777;
+  font-size: 14px;
+}
+
+/* --- RESPONSIVE MEDIA QUERIES --- */
+
+/* For Tablets and Smaller Desktops */
+@media (max-width: 992px) {
+  .navbar, .footer {
+    padding: 12px 40px;
+  }
+}
+
+/* For Mobile Devices */
+@media (max-width: 768px) {
+  /* Navbar changes to stack vertically or reduce footprint */
+  .navbar {
+    padding: 12px 20px;
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+
+  .nav-menu {
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  /* Footer switches from horizontal row to an organized vertical layout */
+  .footer {
+    padding: 40px 20px 20px 20px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 35px;
+  }
+
+  .footer-brand {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-links, .footer-social {
+    align-items: center;
+  }
+}
