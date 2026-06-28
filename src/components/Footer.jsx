@@ -41,7 +41,7 @@ function Footer() {
               }}
              >   
 
-            Building the future of childcare discovery through trust, transparency and technology.
+           India's first verified discovery platform for daycares and preschools, so every mother can find care she trusts.
           </p>
         </div>
 

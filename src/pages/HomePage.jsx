@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { FaUsers, FaBuilding, FaComments } from "react-icons/fa";
@@ -7,6 +7,7 @@ import daycareImg from "../assets/daycare.jpeg";
 
 
 function HomePage() {
+  const navigate = useNavigate();
   return (
     <>
     
@@ -68,21 +69,22 @@ function HomePage() {
          </p>
 
           <button
-            style={{
-              backgroundColor: "#8B5CF6",
-              color: "white",
-              border: "none",
-              borderRadius: "40px",
-              padding: "16px 36px",
-              cursor: "pointer",
-              fontSize: "18px",
-              fontWeight: "600",
-              display: "inline-block",
-              marginTop: "5px",
-            }}
-          >
-           Get Early Access
-          </button>
+          onClick={() => navigate("/survey")}
+          style={{
+            backgroundColor: "#8B5CF6",
+            color: "white",
+            border: "none",
+            borderRadius: "40px",
+            padding: "16px 36px",
+            cursor: "pointer",
+            fontSize: "18px",
+            fontWeight: "600",
+            display: "inline-block",
+            marginTop: "5px",
+          }}
+        >
+          Get Early Access
+   </button>
         </div>
 
         <div style={{ flex: 1, textAlign: "center" }}>
@@ -136,21 +138,22 @@ function HomePage() {
          </p>
 
           <button
-            style={{
-              backgroundColor: "#8B5CF6",
-              color: "white",
-              border: "none",
-              borderRadius: "40px",
-              padding: "16px 36px",
-              cursor: "pointer",
-              fontSize: "18px",
-              fontWeight: "600",
-              display: "inline-block",
-              marginTop: "5px",
-            }}
-           >
-            Schedule Call
-          </button>
+              onClick={() => navigate("/contact")}
+              style={{
+                backgroundColor: "#8B5CF6",
+                color: "white",
+                border: "none",
+                borderRadius: "40px",
+                padding: "16px 36px",
+                cursor: "pointer",
+                fontSize: "18px",
+                fontWeight: "600",
+                display: "inline-block",
+                marginTop: "5px",
+              }}
+            >
+              Schedule Call
+            </button>
         </div>
       </section>
 

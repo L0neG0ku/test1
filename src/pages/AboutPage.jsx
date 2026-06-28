@@ -1,15 +1,17 @@
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import { useNavigate } from "react-router-dom";
 import {
   FaShieldAlt,
   FaComments,
   FaUsers,
   FaBuilding,
 } from "react-icons/fa";
-
+import childcareImg from "../assets/childcare.png";
 
 
 function AboutPage() {
+    const navigate = useNavigate();
 return (
 <>
         <div
@@ -425,21 +427,6 @@ return (
                             childcare decisions with confidence.
                         </p>
 
-                        <button
-                            style={{
-                                marginTop: "25px",
-                                width: "140px",
-                                background: "#6D4AFF",
-                                color: "white",
-                                border: "none",
-                                borderRadius: "30px",
-                                padding: "14px 0",
-                                fontWeight: "600",
-                                cursor: "pointer",
-                            }}
-                        >
-                            Learn More
-                        </button>
                     </div>
                 </div>
 
@@ -460,7 +447,7 @@ return (
   }}
 >
   <img
-    src="/daycare.png"   // Change this to your daycare image
+    src={childcareImg} 
     alt="Daycare Providers"
     style={{
       width: "45%",
@@ -511,23 +498,7 @@ return (
     >
       Manage enrollment, communicate with parents, showcase your daycare,
       and grow your childcare business with Kinderly's all-in-one platform.
-    </p>
-
-    <button
-      style={{
-        marginTop: "25px",
-        width: "140px",
-        background: "#6D4AFF",
-        color: "white",
-        border: "none",
-        borderRadius: "30px",
-        padding: "14px 0",
-        fontWeight: "600",
-        cursor: "pointer",
-      }}
-    >
-      Learn More
-    </button>
+    </p>F
   </div>
 </div>
 
@@ -568,22 +539,23 @@ return (
                 childcare providers across communities.
             </p>
 
-            <button
-                style={{
-                    marginTop: "40px",
-                    backgroundColor: "#f58c50",
-                    color: "white",
-                    border: "none",
-                    borderRadius: "30px",
-                    padding: "16px 40px",
-                    fontSize: "18px",
-                    fontWeight: "600",
-                    cursor: "pointer",
-                    boxShadow: "0 4px 12px rgba(245,140,80,0.25)",
-                }}
-            >
-                Join the Kinderly Journey
-            </button>
+        <button
+    onClick={() => navigate("/survey")}
+    style={{
+        marginTop: "40px",
+        backgroundColor: "#f58c50",
+        color: "white",
+        border: "none",
+        borderRadius: "30px",
+        padding: "16px 40px",
+        fontSize: "18px",
+        fontWeight: "600",
+        cursor: "pointer",
+        boxShadow: "0 4px 12px rgba(245,140,80,0.25)",
+    }}
+>
+    Join the Kinderly Journey
+</button>
         </div>
 
 
