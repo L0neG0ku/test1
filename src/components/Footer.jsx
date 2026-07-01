@@ -1,4 +1,4 @@
-import logo from "../assets/logo.jpeg";
+import logo from "../assets/logo.png";
 import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 import "./Navigation.css"; // Import the responsive stylesheet
 

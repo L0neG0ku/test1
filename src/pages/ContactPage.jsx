@@ -389,7 +389,7 @@ function ContactPage() {
             experience for everyone.
           </p>
           <button
-      onClick={() => navigate("/survey")} // Change "/survey" to your exact route path
+      onClick={() => navigate("/survey")} 
       style={{
         marginTop: "35px",
         background: "#6D4AFF",

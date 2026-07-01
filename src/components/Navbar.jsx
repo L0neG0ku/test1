@@ -1,4 +1,4 @@
-import logo from "../assets/logo.jpeg";
+import logo from "../assets/logo.png";
 import { Link } from "react-router-dom";
 import "./Navigation.css"; // Import the responsive stylesheet
 

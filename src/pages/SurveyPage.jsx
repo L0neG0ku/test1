@@ -7,7 +7,6 @@ function SurveyPage() {
 
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
-  const [city, setCity] = useState("");
 
   const [q1, setQ1] = useState([]);
   const [q2, setQ2] = useState([]);
@@ -23,8 +22,19 @@ function SurveyPage() {
     }
   };
 
+  const handleRoleSelection = (role) => {
+    if (!name || !email) {
+      alert("Please fill out your Name and Email before choosing a role.");
+      return;
+    }
+    setUserType(role);
+    setShowSurvey(true);
+    // Reset answers if they change roles mid-survey
+    setQ1([]); setQ2([]); setQ3([]); setQ4([]); setQ5([]);
+  };
+
   const sendEmail = () => {
-    if (!name || !email || !city || !userType) {
+    if (!name || !email || !userType) {
       alert("Please fill all fields before submitting.");
       return;
     }
@@ -40,7 +50,6 @@ function SurveyPage() {
     const templateParams = {
       name: name,
       email: email,
-      city: city,
       userType: userType,
       message: `
       Q1: ${q1.join(", ")}
@@ -70,10 +79,9 @@ function SurveyPage() {
         display: "flex",
         justifyContent: "center",
         alignItems: "flex-start",
-        padding: "20px 12px", // Decreased padding for tight screens
+        padding: "20px 12px",
       }}
     >
-      {/* Injecting dynamic media queries directly into the page */}
       <style>{`
         .survey-container {
           padding: 50px;
@@ -176,34 +184,31 @@ function SurveyPage() {
           style={inputStyle}
         />
 
-        <input
-          type="text"
-          placeholder="City"
-          value={city}
-          onChange={(e) => setCity(e.target.value)}
-          style={inputStyle}
-        />
-
-        <select
-          value={userType}
-          onChange={(e) => {
-            setUserType(e.target.value);
-            setShowSurvey(false);
-            setQ1([]); setQ2([]); setQ3([]); setQ4([]); setQ5([]);
-          }}
-          style={inputStyle}
-        >
-          <option value="">I am a</option>
-          <option value="Parent">Parent</option>
-          <option value="Daycare Owner">Daycare Owner</option>
-        </select>
-
-        <button
-          onClick={() => setShowSurvey(true)}
-          style={buttonStyle}
-        >
-          Start Survey
-        </button>
+        {/* Role Selection Buttons */}
+        <div style={{ display: "flex", gap: "16px", marginBottom: "20px" }}>
+          <button
+            onClick={() => handleRoleSelection("Parent")}
+            style={{
+              ...roleButtonStyle,
+              background: userType === "Parent" ? "linear-gradient(135deg, #8b5cf6, #7c4dff)" : "#fff",
+              color: userType === "Parent" ? "#fff" : "#7c4dff",
+              border: `2px solid #7c4dff`,
+            }}
+          >
+            Parent
+          </button>
+          <button
+            onClick={() => handleRoleSelection("Daycare Owner")}
+            style={{
+              ...roleButtonStyle,
+              background: userType === "Daycare Owner" ? "linear-gradient(135deg, #8b5cf6, #7c4dff)" : "#fff",
+              color: userType === "Daycare Owner" ? "#fff" : "#7c4dff",
+              border: `2px solid #7c4dff`,
+            }}
+          >
+            Daycare Owner
+          </button>
+        </div>
 
         {showSurvey && userType === "Daycare Owner" && (
           <div style={{ marginTop: "40px" }}>
@@ -405,7 +410,6 @@ function SurveyPage() {
   );
 }
 
-// Fixed spacing styles for improved mobile ergonomics
 const inputStyle = {
   width: "100%",
   padding: "16px",
@@ -414,6 +418,17 @@ const inputStyle = {
   border: "1px solid #ddd",
   fontSize: "16px",
   boxSizing: "border-box",
+  outline: "none",
+};
+
+const roleButtonStyle = {
+  flex: 1,
+  padding: "16px",
+  borderRadius: "12px",
+  fontSize: "16px",
+  fontWeight: "600",
+  cursor: "pointer",
+  transition: "all 0.2s ease-in-out",
   outline: "none",
 };
 
