@@ -7,6 +7,9 @@ function SurveyPage() {
 
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState(""); // Added contact number state
+
+  const [isSubmitting, setIsSubmitting] = useState(false); // Added submission lock state
 
   const [q1, setQ1] = useState([]);
   const [q2, setQ2] = useState([]);
@@ -23,8 +26,8 @@ function SurveyPage() {
   };
 
   const handleRoleSelection = (role) => {
-    if (!name || !email) {
-      alert("Please fill out your Name and Email before choosing a role.");
+    if (!name || !email || !phone) {
+      alert("Please fill out your Name, Email, and Contact Number before choosing a role.");
       return;
     }
     setUserType(role);
@@ -34,7 +37,7 @@ function SurveyPage() {
   };
 
   const sendEmail = () => {
-    if (!name || !email || !userType) {
+    if (!name || !email || !phone || !userType) {
       alert("Please fill all fields before submitting.");
       return;
     }
@@ -47,9 +50,13 @@ function SurveyPage() {
       return;
     }
 
+    // Lock submission button immediately
+    setIsSubmitting(true);
+
     const templateParams = {
       name: name,
       email: email,
+      phone: phone, // Included phone in template parameters
       userType: userType,
       message: `
       Q1: ${q1.join(", ")}
@@ -64,10 +71,22 @@ function SurveyPage() {
       .send("service_pe450l4", "template_zswwmx9", templateParams, "taf9C1ZSN7pSkP8Zl")
       .then(() => {
         alert("Thank you for helping shape Kinderly!");
+        
+        // Reset everything back to the starting homepage state
+        setName("");
+        setEmail("");
+        setPhone("");
+        setUserType("");
+        setShowSurvey(false);
+        setQ1([]); setQ2([]); setQ3([]); setQ4([]); setQ5([]);
       })
       .catch((error) => {
         console.error(error);
         alert("Failed to submit survey.");
+      })
+      .finally(() => {
+        // Unlock button regardless of success or failure
+        setIsSubmitting(false);
       });
   };
 
@@ -174,6 +193,7 @@ function SurveyPage() {
           value={name}
           onChange={(e) => setName(e.target.value)}
           style={inputStyle}
+          disabled={showSurvey} // Optional: Lock inputs when working on survey questions
         />
 
         <input
@@ -182,6 +202,17 @@ function SurveyPage() {
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           style={inputStyle}
+          disabled={showSurvey}
+        />
+
+        {/* New Contact Number Field */}
+        <input
+          type="tel"
+          placeholder="Contact Number"
+          value={phone}
+          onChange={(e) => setPhone(e.target.value)}
+          style={inputStyle}
+          disabled={showSurvey}
         />
 
         {/* Role Selection Buttons */}
@@ -400,8 +431,17 @@ function SurveyPage() {
 
         {showSurvey && (
           <div style={{ textAlign: "center", marginTop: "40px" }}>
-            <button style={buttonStyle} onClick={sendEmail}>
-              Submit Survey
+            <button 
+              disabled={isSubmitting} // Disable interaction when processing
+              onClick={sendEmail}
+              style={{
+                ...buttonStyle,
+                background: isSubmitting ? "#aaa" : "linear-gradient(135deg, #8b5cf6, #7c4dff)",
+                cursor: isSubmitting ? "not-allowed" : "pointer",
+                boxShadow: isSubmitting ? "none" : "0 6px 16px rgba(124,77,255,0.2)"
+              }}
+            >
+              {isSubmitting ? "Submitting..." : "Submit Survey"}
             </button>
           </div>
         )}
@@ -435,14 +475,12 @@ const roleButtonStyle = {
 const buttonStyle = {
   width: "100%",
   padding: "16px",
-  background: "linear-gradient(135deg, #8b5cf6, #7c4dff)",
   color: "white",
   border: "none",
   borderRadius: "999px",
   fontSize: "17px",
   fontWeight: "600",
-  cursor: "pointer",
-  boxShadow: "0 6px 16px rgba(124,77,255,0.2)",
+  transition: "all 0.2s ease-in-out"
 };
 
 const checkboxLabelStyle = {
