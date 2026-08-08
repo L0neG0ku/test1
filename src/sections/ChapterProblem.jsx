@@ -2,7 +2,7 @@ const CARDS = [
   {
     n: "01",
     title: "Scattered and confusing",
-    body: "Information is spread across Google searches, WhatsApp groups and word of mouth you never really know what you're getting.",
+    body: "Information is spread across Google searches, WhatsApp groups and word of mouth, so you never really know what you're getting.",
   },
   {
     n: "02",
@@ -24,8 +24,8 @@ function ChapterProblem({ showEyebrow = true }) {
           <div>
             {showEyebrow && <p className="k-eyebrow">Chapter I · The problem</p>}
             <h2 className="k-h2">
-              Choosing where your child spends the day is a big decision{" "}
-              <span className="k-dim">and it shouldn't feel like guesswork.</span>
+              Choosing where your child spends the day is a big decision.{" "}
+              <span className="k-dim">It shouldn't feel like guesswork.</span>
             </h2>
           </div>
           <p className="k-lead">

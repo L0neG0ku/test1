@@ -11,13 +11,13 @@ const STEPS = [
     n: "02",
     Icon: Scales,
     title: "Compare and shortlist",
-    body: "See real photos, fees, timings and safety details side-by-side. Save the ones you love.",
+    body: "See real photos, fees, timings and safety details side by side. Save the ones you love.",
   },
   {
     n: "03",
     Icon: Card,
     title: "Enrol and pay in the app",
-    body: "Handle admissions and fees securely — no more cash, cheques or paperwork chases.",
+    body: "Handle admissions and fees securely. No more cash, cheques or paperwork chases.",
   },
   {
     n: "04",

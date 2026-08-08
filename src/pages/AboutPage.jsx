@@ -29,7 +29,7 @@ function AboutPage() {
     <>
       <header className="k-pagehead">
         <div className="k-shell">
-          <p className="k-eyebrow k-eyebrow--rule">About Kribble</p>
+          <p className="k-eyebrow">About Kribble</p>
           <h1 className="k-h2" style={{ maxWidth: "17ch" }}>
             We started Kribble because{" "}
             <span className="k-dim">
@@ -58,7 +58,7 @@ function AboutPage() {
             </h2>
             <p className="k-lead" style={{ maxWidth: "52ch" }}>
               India's childcare search runs on WhatsApp forwards and hope. We
-              are building the verified alternative — a single place where every
+              are building the verified alternative: a single place where every
               daycare, preschool and playschool has been physically checked, and
               where enrolling, paying and staying updated all happen in one calm
               app.

@@ -8,7 +8,7 @@ const FEATURES = [
   },
   {
     Icon: Brain,
-    title: "AI-powered insights",
+    title: "AI powered insights",
     body: "Understand strengths and areas to grow, longitudinally.",
   },
   {
@@ -44,8 +44,8 @@ function DevelopmentalStory({ showEyebrow = true }) {
 
               <p className="k-devstory__intro">
                 Kribble will build a longitudinal profile of your child's early
-                years — combining teacher notes, milestone tracking and AI
-                insights to help you make better-informed parenting decisions,
+                years, combining teacher notes, milestone tracking and AI
+                insights to help you make better informed parenting decisions,
                 all the way to primary school.
               </p>
 

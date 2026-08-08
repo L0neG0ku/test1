@@ -27,7 +27,7 @@ function ContactSection({ showEyebrow = true }) {
         {
           name: form.name,
           email: form.email,
-          phone: "—",
+          phone: "Not provided",
           userType: "Website enquiry",
           message: form.message,
         },
@@ -114,7 +114,7 @@ function ContactSection({ showEyebrow = true }) {
 
           {status === "sent" && (
             <p className="k-form__ok">
-              Thank you — your note is on its way. We'll reply soon.
+              Thank you, your note is on its way. We'll reply soon.
             </p>
           )}
           {status === "error" && (

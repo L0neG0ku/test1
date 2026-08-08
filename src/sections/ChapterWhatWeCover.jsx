@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { ArrowRight } from "../components/icons";
 
-const WORDS = ["Daycares", "Preschools", "Playschools", "After-school care"];
+const WORDS = ["Daycares", "Preschools", "Playschools", "After school care"];
 
 function ChapterWhatWeCover({ showEyebrow = true }) {
   return (
@@ -32,8 +32,8 @@ function ChapterWhatWeCover({ showEyebrow = true }) {
 
       <div className="k-shell">
         <p className="k-lead" style={{ maxWidth: "54ch" }}>
-          From your baby's first daycare to their first playschool morning
-          Kribble covers the full early-years journey, with the same
+          From your baby's first daycare to their first playschool morning,
+          Kribble covers the full early years journey with the same
           verification standard at every stage.
         </p>
 

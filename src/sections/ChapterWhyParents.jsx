@@ -9,7 +9,7 @@ const CARDS = [
   {
     Icon: Sparkle,
     title: "No more endless scrolling",
-    body: "Trusted options in one place curated, not crowdsourced from strangers.",
+    body: "Trusted options in one place, curated rather than crowdsourced from strangers.",
   },
   {
     Icon: Wallet,
@@ -32,8 +32,8 @@ function ChapterWhyParents({ showEyebrow = true }) {
             <p className="k-eyebrow">Chapter IV · Why parents love it</p>
           )}
           <h2 className="k-h2" style={{ maxWidth: "18ch" }}>
-            Warm, quiet, in-the-background —{" "}
-            <span className="k-accent">the way parenting help should feel.</span>
+            Warm, quiet, in the background.{" "}
+            <span className="k-accent">The way parenting help should feel.</span>
           </h2>
         </div>
 

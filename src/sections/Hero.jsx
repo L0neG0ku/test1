@@ -8,10 +8,6 @@ function Hero() {
     <section className="k-hero">
       <div className="k-shell k-hero__grid">
         <div>
-          <p className="k-eyebrow k-eyebrow--rule">
-            Verified childcare, made simple
-          </p>
-
           <h1 className="k-h1 k-hero__title">
             Find childcare
             <br />
@@ -20,7 +16,7 @@ function Hero() {
 
           <p className="k-lead">
             Kribble helps you discover verified daycares, preschools and
-            playschools near you compare them, enrol, and pay, all in one app.
+            playschools near you. Compare them, enrol and pay, all in one app.
           </p>
 
           <div className="k-hero__actions">

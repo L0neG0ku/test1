@@ -13,7 +13,7 @@ const TEAM = [
     photo: ketanImg,
     name: "Ketan Pandey",
     role: "Co-founder & CTO",
-    body: "Leads product and engineering across the Kribble app and platform from centre discovery and fee comparison to secure in app payments and the developmental insights layer.",
+    body: "Leads product and engineering across the Kribble app and platform, from centre discovery and fee comparison to secure payments and the developmental insights layer.",
   },
   {
     photo: anandImg,
@@ -31,7 +31,7 @@ function ChapterTeam({ showEyebrow = true }) {
           <div>
             {showEyebrow && <p className="k-eyebrow">Chapter VI · The team</p>}
             <h2 className="k-h2">
-              Built by three parents-at-heart —{" "}
+              Built by three parents at heart,{" "}
               <span className="k-dim">for the ones doing the school runs.</span>
             </h2>
           </div>

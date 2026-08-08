@@ -17,7 +17,7 @@ function ChapterNav({ eyebrow, title }) {
   return (
     <header className="k-pagehead">
       <div className="k-shell">
-        <p className="k-eyebrow k-eyebrow--rule">{eyebrow}</p>
+        <p className="k-eyebrow">{eyebrow}</p>
         <h1 className="k-h2" style={{ maxWidth: "18ch" }}>
           {title}
         </h1>

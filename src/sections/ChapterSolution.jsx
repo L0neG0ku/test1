@@ -13,13 +13,13 @@ const CARDS = [
     n: "02",
     Icon: Grid,
     title: "Everything in one place",
-    body: "Search, compare and shortlist with real, confirmed information not guesswork from a group chat.",
+    body: "Search, compare and shortlist with real, confirmed information, not guesswork from a group chat.",
   },
   {
     n: "03",
     Icon: Wallet,
     title: "Enrol, pay & stay connected",
-    body: "Handle admissions, fee payments and daily updates from your little one  all inside one calm app.",
+    body: "Handle admissions, fee payments and daily updates from your little one, all inside one calm app.",
   },
 ];
 
@@ -63,7 +63,7 @@ function ChapterSolution({ showEyebrow = true }) {
           <figure className="k-shot">
             <img
               src={showcaseImg}
-              alt="Inside a Kribble-verified preschool"
+              alt="Inside a verified Kribble preschool"
               loading="lazy"
               decoding="async"
             />

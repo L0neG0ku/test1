@@ -93,15 +93,6 @@ h1, h2, h3, h4, h5, .display {
   gap: 14px;
 }
 
-.k-eyebrow--rule::before {
-  content: "";
-  width: 38px;
-  height: 2px;
-  background: var(--brand);
-  border-radius: 2px;
-  flex: none;
-}
-
 /* ---------- headings ---------- */
 .k-h1 {
   font-size: clamp(44px, 7vw, 84px);
@@ -290,6 +281,9 @@ h1, h2, h3, h4, h5, .display {
 
 @media (max-width: 900px) {
   .k-nav__toggle { display: inline-flex; }
+  /* Closed drawer must measure exactly 0. With border-box sizing, padding
+     and border survive `max-height: 0` and leak a strip of the first link
+     out below the navbar, so they collapse too. */
   .k-nav__links {
     position: absolute;
     top: var(--nav-h);
@@ -299,14 +293,23 @@ h1, h2, h3, h4, h5, .display {
     align-items: stretch;
     gap: 0;
     background: #fff;
-    border-bottom: 1px solid var(--line);
-    box-shadow: var(--shadow-md);
-    padding: 8px var(--pad) 22px;
+    border-bottom: 0 solid var(--line);
+    padding: 0 var(--pad);
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.3s ease, padding 0.3s ease;
+    visibility: hidden;
+    transition: max-height 0.32s ease, padding 0.32s ease,
+      border-width 0.32s ease, visibility 0s linear 0.32s;
   }
-  .k-nav__links.is-open { max-height: 460px; }
+  .k-nav__links.is-open {
+    max-height: 460px;
+    padding: 8px var(--pad) 22px;
+    border-bottom-width: 1px;
+    box-shadow: var(--shadow-md);
+    visibility: visible;
+    transition: max-height 0.32s ease, padding 0.32s ease,
+      border-width 0.32s ease, visibility 0s;
+  }
   .k-nav__link {
     padding: 15px 0;
     border-bottom: 1px solid var(--line);
@@ -1410,18 +1413,16 @@ h1, h2, h3, h4, h5, .display {
   to { opacity: 1; transform: none; }
 }
 
-.k-hero .k-eyebrow,
 .k-hero__title,
 .k-hero .k-lead,
 .k-hero__actions,
 .k-trust {
   animation: k-rise 0.75s cubic-bezier(0.2, 0.8, 0.3, 1) both;
 }
-.k-hero .k-eyebrow { animation-delay: 0.05s; }
-.k-hero__title { animation-delay: 0.13s; }
-.k-hero .k-lead { animation-delay: 0.21s; }
-.k-hero__actions { animation-delay: 0.29s; }
-.k-trust { animation-delay: 0.37s; }
+.k-hero__title { animation-delay: 0.06s; }
+.k-hero .k-lead { animation-delay: 0.14s; }
+.k-hero__actions { animation-delay: 0.22s; }
+.k-trust { animation-delay: 0.3s; }
 
 .k-blob { animation: k-pop 0.9s cubic-bezier(0.2, 0.8, 0.3, 1) 0.18s both; }
 .k-circle { animation: k-pop 0.9s cubic-bezier(0.2, 0.8, 0.3, 1) 0.34s both; }

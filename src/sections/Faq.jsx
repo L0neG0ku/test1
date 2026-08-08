@@ -4,27 +4,27 @@ import { ChevronDown } from "../components/icons";
 const ITEMS = [
   {
     q: "What kinds of childcare plans can I book on Kribble?",
-    a: "Preschool admissions, monthly and half-day daycare, after-school care, holiday camps and our One-Day Daycare plan. Whether you need childcare for a single afternoon or a full academic year, it lives in the same app.",
+    a: "Preschool admissions, monthly and half day daycare, after school care, holiday camps and our One-Day Daycare plan. Whether you need childcare for a single afternoon or a full academic year, it lives in the same app.",
   },
   {
     q: "How do I compare fees across centres?",
-    a: "Every listing shows admission, registration, monthly, quarterly, half-yearly and annual pricing in the same format, so you can put centres side-by-side and see the real cost before you commit — no enquiry calls needed.",
+    a: "Every listing shows admission, registration, monthly, quarterly, half yearly and annual pricing in the same format, so you can put centres side by side and see the real cost before you commit. No enquiry calls needed.",
   },
   {
     q: "How does Kribble verify childcare centres?",
-    a: "Someone from our team physically visits every centre before it goes live. We check safety, staff credentials, hygiene, ratios and facilities, and we photograph the space ourselves — so the photos you see are the rooms your child will actually be in.",
+    a: "Someone from our team physically visits every centre before it goes live. We check safety, staff credentials, hygiene, ratios and facilities, and we photograph the space ourselves, so the photos you see are the rooms your child will actually be in.",
   },
   {
     q: "What is One-Day Daycare?",
-    a: "Our exclusive convenience feature: book a verified centre for a single day, whenever life demands it — a meeting that runs late, a school holiday, a trip to another city. No enrolment, no long commitment.",
+    a: "Our exclusive convenience feature: book a verified centre for a single day, whenever life demands it. A meeting that runs late, a school holiday, a trip to another city. No enrolment, no long commitment.",
   },
   {
     q: "Can I enrol my child in a preschool through the app?",
-    a: "Yes. Shortlist the centres you like, submit the admission form and pay the fee in-app. You will get a digital receipt and the centre gets your child's profile — including allergies and medical needs — on record from day one.",
+    a: "Yes. Shortlist the centres you like, submit the admission form and pay the fee in the app. You will get a digital receipt and the centre gets your child's profile, including allergies and medical needs, on record from day one.",
   },
   {
     q: "What payment schedules are available?",
-    a: "Whatever the centre offers: one-day, monthly, quarterly, half-yearly or annual. Payments are handled securely in-app with automatic receipts and gentle reminders before anything is due.",
+    a: "Whatever the centre offers: one day, monthly, quarterly, half yearly or annual. Payments are handled securely in the app with automatic receipts and gentle reminders before anything is due.",
   },
   {
     q: "Is Kribble free for parents?",
