@@ -1,12 +1,19 @@
-* {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  font-family: Arial, sans-serif;
-  background: white;
+  font-family: "Inter", "Segoe UI", system-ui, sans-serif;
+  background: #fff;
+  overflow-x: hidden;
 }
 
 a {
@@ -14,45 +21,15 @@ a {
   color: inherit;
 }
 
-.card {
-  width: 350px;
-  min-height: 280px;
-
-  background: white;
-
-  border-radius: 25px;
-
-  padding: 45px;
-
-  text-align: center;
-
-  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
-
-  transition: all 0.3s ease;
+img {
+  max-width: 100%;
 }
 
-.card:hover {
-  transform: translateY(-10px);
-
-  box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+button {
+  font-family: inherit;
 }
 
-.survey-card {
-  background: #fff0b8;
-}
-
-.survey-btn {
-  background: #f58c50;
-
-  color: white;
-
-  border: none;
-
-  padding: 12px 25px;
-
-  border-radius: 25px;
-
-  cursor: pointer;
-
-  margin-top: 15px;
+::selection {
+  background: #7753ff;
+  color: #fff;
 }

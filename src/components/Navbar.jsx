@@ -1,79 +1,87 @@
-import logo from "../assets/logo.png";
-import { Link } from "react-router-dom";
-import "./Navigation.css"; // Import the responsive stylesheet
+import { useState } from "react";
+import { Link, NavLink, useLocation } from "react-router-dom";
+import logo from "../assets/logo-purple.png";
+import { ArrowRight, Menu, Close } from "./icons";
+
+const LINKS = [
+  { to: "/problem", label: "Problem" },
+  { to: "/solution", label: "Solution" },
+  { to: "/how-it-works", label: "How it works" },
+  { to: "/team", label: "Team" },
+];
 
 function Navbar() {
+  const [open, setOpen] = useState(false);
+  const { pathname } = useLocation();
+
+  const close = () => setOpen(false);
+
   return (
-    <nav className="navbar">
-      {/* Logo */}
-      <Link to="/">
-        <img
-          src={logo}
-          alt="Kinderly"
-          style={{
-            height: "60px", // Slightly reduced height to fit compact spaces better
-            width: "auto",
-            objectFit: "contain",
-            cursor: "pointer",
-          }}
-        />
-      </Link>
-
-      {/* Navigation */}
-      <div className="nav-menu">
-        <Link
-          to="/"
-          className="nav-link"
-          style={{
-            textDecoration: "none",
-            color: "#333",
-            fontWeight: "600",
-          }}
-        >
-          Home
+    <nav className="k-nav">
+      <div className="k-shell k-nav__inner">
+        <Link to="/" className="k-nav__logo" onClick={close}>
+          <img src={logo} alt="Kribble" />
         </Link>
 
-        <Link
-          to="/about"
-          className="nav-link"
-          style={{
-            textDecoration: "none",
-            color: "#333",
-            fontWeight: "600",
-          }}
-        >
-          About
-        </Link>
+        <div className={`k-nav__links ${open ? "is-open" : ""}`}>
+          {LINKS.map((l) => (
+            <NavLink
+              key={l.to}
+              to={l.to}
+              onClick={close}
+              className={({ isActive }) =>
+                `k-nav__link ${isActive ? "is-active" : ""}`
+              }
+            >
+              {l.label}
+            </NavLink>
+          ))}
 
-        <Link
-          to="/contact"
-          className="nav-link"
-          style={{
-            textDecoration: "none",
-            color: "#333",
-            fontWeight: "600",
-          }}
-        >
-          Contact
-        </Link>
-
-        <Link to="/survey" style={{ textDecoration: "none" }}>
+          {/* CTAs live inside the drawer on mobile */}
           <button
-            style={{
-              backgroundColor: "#f58c50",
-              color: "white",
-              border: "none",
-              borderRadius: "30px",
-              cursor: "pointer",
-              padding: "10px 24px", // Streamlined button spacing
-              fontSize: "15px",
-              fontWeight: "600",
-              boxShadow: "0 4px 12px rgba(245,140,80,0.25)",
-            }}
+            type="button"
+            className="k-btn k-btn--ghost k-nav__cta-mobile"
+            onClick={(e) => e.preventDefault()}
           >
-            Survey
+            Centres
           </button>
-        </Link>
+          <Link
+            to="/contact"
+            onClick={close}
+            className="k-btn k-btn--dark k-nav__cta-mobile"
+          >
+            Get in touch <ArrowRight />
+          </Link>
+        </div>
+
+        <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
+          {/* Placeholder until the centre-facing product exists */}
+          <button
+            type="button"
+            className="k-btn k-btn--ghost k-nav__cta-desktop"
+            onClick={(e) => e.preventDefault()}
+          >
+            Centres
+          </button>
+
+          <Link
+            to="/contact"
+            className={`k-btn k-btn--dark k-nav__cta-desktop ${
+              pathname === "/contact" ? "is-active" : ""
+            }`}
+          >
+            Get in touch <ArrowRight />
+          </Link>
+
+          <button
+            className="k-nav__toggle"
+            onClick={() => setOpen((v) => !v)}
+            aria-label={open ? "Close menu" : "Open menu"}
+            aria-expanded={open}
+          >
+            {open ? <Close /> : <Menu />}
+          </button>
+        </div>
       </div>
     </nav>
   );

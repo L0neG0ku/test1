@@ -1,67 +1,63 @@
-import logo from "../assets/logo.png";
+import { Link } from "react-router-dom";
 import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
-import "./Navigation.css"; // Import the responsive stylesheet
+import logo from "../assets/logo-purple.png";
 
 function Footer() {
   return (
-    <footer className="footer">
-      <div className="footer-content">
-        
-        <div className="footer-brand">
-          <img
-            src={logo}
-            alt="Kinderly"
-            style={{
-              width: "90px",
-              borderRadius: "12px",
-              marginBottom: "10px",
-            }}
-          />
+    <footer className="k-footer">
+      <div className="k-shell">
+        <div className="k-footer__content">
+          <div className="k-footer__brand">
+            <span className="k-footer__logo">
+              <img src={logo} alt="Kribble" />
+            </span>
+            <p>
+              India's first verified discovery platform for daycares and
+              preschools, so every mother can find care she trusts.
+            </p>
+          </div>
 
-          <h3
-            style={{
-              marginTop: "10px",
-              marginBottom: "10px",
-              fontSize: "24px",
-              fontWeight: "700",
-              color: "#222",
-            }}
-          >
-            Kinderly
-          </h3>
-          <p
-            style={{
-              marginTop: "5px",
-              maxWidth: "260px",
-              lineHeight: "1.6",
-              color: "#555",
-              fontSize: "14px",
-            }}
-          >
-            India's first verified discovery platform for daycares and preschools, so every mother can find care she trusts.
-          </p>
-        </div>
+          <div className="k-footer__col">
+            <h4>Quick Links</h4>
+            <Link to="/about">About</Link>
+            <Link to="/survey">Survey</Link>
+            <Link to="/contact">Contact</Link>
+          </div>
 
-        <div className="footer-links">
-          <h4>Quick Links</h4>
-          <a href="#">About</a>
-          <a href="/survey">Survey</a>
-          <a href="#">Contact</a>
-        </div>
-
-        <div className="footer-social">
-          <h4>Follow Us</h4>
-          <div className="social-icons">
-            <FaFacebook />
-            <FaInstagram />
-            <FaLinkedin />
+          <div className="k-footer__col">
+            <h4>Follow Us</h4>
+            <div className="k-footer__social">
+              <a
+                href="https://www.facebook.com/share/19BUoGWQUm/"
+                target="_blank"
+                rel="noreferrer noopener"
+                aria-label="Kribble on Facebook"
+              >
+                <FaFacebook />
+              </a>
+              <a
+                href="https://www.instagram.com/kribblecare"
+                target="_blank"
+                rel="noreferrer noopener"
+                aria-label="Kribble on Instagram"
+              >
+                <FaInstagram />
+              </a>
+              <a
+                href="https://www.linkedin.com/company/kribblecare/"
+                target="_blank"
+                rel="noreferrer noopener"
+                aria-label="Kribble on LinkedIn"
+              >
+                <FaLinkedin />
+              </a>
+            </div>
           </div>
         </div>
 
-      </div>
-
-      <div className="footer-bottom">
-        © 2026 Kinderly. All rights reserved.
+        <div className="k-footer__bottom">
+          © 2026 Kribble. All rights reserved.
+        </div>
       </div>
     </footer>
   );
