@@ -67,7 +67,7 @@ export const TeamPage = page(
 
 export const WhyKribblePage = page(
   "Why Kribble",
-  "Everything childcare, in one calm app.",
+  "Childcare, thoughtfully brought together.",
   WhyKribble
 );
 

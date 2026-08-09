@@ -32,8 +32,8 @@ function ChapterWhyParents({ showEyebrow = true }) {
             <p className="k-eyebrow">Chapter IV · Why parents love it</p>
           )}
           <h2 className="k-h2" style={{ maxWidth: "18ch" }}>
-            Warm, quiet, in the background.{" "}
-            <span className="k-accent">The way parenting help should feel.</span>
+            Quietly supportive. Warmly present.{" "}
+            <span className="k-accent">Just how parenting help should be.</span>
           </h2>
         </div>
 
@@ -50,8 +50,9 @@ function ChapterWhyParents({ showEyebrow = true }) {
             <div className="k-why__note">
               <span>Built for parents</span>
               <p>
-                Made by parents who have done the daycare hunt themselves and
-                did not enjoy it.
+                Built around what parents need
+                Designed to make searching , comparing, choosing and managing childcare simpler  
+                and easier from the first search to everyday care.
               </p>
             </div>
           </div>

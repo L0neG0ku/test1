@@ -7,19 +7,19 @@ const TEAM = [
     photo: piyushImg,
     name: "Piyush Chawla",
     role: "Co-founder & CEO",
-    body: "Sets Kribble's direction and holds the verification standard that every centre has to clear. Works directly with daycare and preschool operators to build a network parents can rely on without checking twice.",
+    body: "Entrepreneur and business operator with experience scaling multi-location service businesses and managing operations, teams and customer experience. Leads Kribble’s vision, operations and centre partnerships.",
   },
   {
     photo: ketanImg,
     name: "Ketan Pandey",
     role: "Co-founder & CTO",
-    body: "Leads product and engineering across the Kribble app and platform, from centre discovery and fee comparison to secure payments and the developmental insights layer.",
+    body: "AI and full-stack technology professional with experience across machine learning, product engineering and application development. Leads Kribble’s technology and product.",
   },
   {
     photo: anandImg,
     name: "Anand Singh",
     role: "Co-founder & CMO",
-    body: "Owns growth and partnerships, bringing new cities and centres onto the platform. Spends his time with parents and operators, turning what they tell us into what we build next.",
+    body: "Growth and marketing professional with experience in brand building, partnerships and customer acquisition. Leads Kribble’s growth, brand and market expansion.",
   },
 ];
 
@@ -31,13 +31,12 @@ function ChapterTeam({ showEyebrow = true }) {
           <div>
             {showEyebrow && <p className="k-eyebrow">Chapter VI · The team</p>}
             <h2 className="k-h2">
-              Built by three parents at heart,{" "}
-              <span className="k-dim">for the ones doing the school runs.</span>
+              Three founders. One shared ambition:{" "}
+              <span className="k-dim"> to make childcare simpler, more transparent and easier to manage.</span>
             </h2>
           </div>
           <p className="k-lead">
-            We're not building this for the "childcare industry." We're building
-            it for the parent picking up their child at 6:30.
+           We at kribble are making childcare simpler, more connected and easier to manage for families and providers alike.
           </p>
         </div>
 

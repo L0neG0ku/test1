@@ -15,8 +15,8 @@ function Hero() {
           </h1>
 
           <p className="k-lead">
-            Kribble helps you discover verified daycares, preschools and
-            playschools near you. Compare them, enrol and pay, all in one app.
+          Discover, compare and choose trusted daycares and preschools. 
+          Book care, make payments, stay connected with updates, and access your child’s records all in one simple app.
           </p>
 
           <div className="k-hero__actions">
@@ -59,7 +59,7 @@ function Hero() {
               </span>
               Verified
             </div>
-            <p>Every centre physically checked by our team.</p>
+            <p>Every centre is physically checked by our team.</p>
           </div>
         </div>
       </div>

@@ -1,9 +1,5 @@
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
-import Footer from "../components/Footer";
-
-const BRAND = "#7753FF";
-const INK = "#1B0F33";
 
 function SurveyPage() {
   const [showSurvey, setShowSurvey] = useState(false);
@@ -11,7 +7,7 @@ function SurveyPage() {
 
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
-  const [phone, setPhone] = useState(""); // Added contact number state
+  const [phone, setPhone] = useState(""); 
 
   const [isSubmitting, setIsSubmitting] = useState(false); // Added submission lock state
 
@@ -75,7 +71,7 @@ function SurveyPage() {
       .send("service_pe450l4", "template_zswwmx9", templateParams, "taf9C1ZSN7pSkP8Zl")
       .then(() => {
         alert("Thank you for helping shape Kribble!");
-
+        
         // Reset everything back to the starting homepage state
         setName("");
         setEmail("");
@@ -95,33 +91,45 @@ function SurveyPage() {
   };
 
   return (
-    <>
     <div
       style={{
         minHeight: "100vh",
-        background:
-          "radial-gradient(90% 70% at 12% 0%, #f1e7ff 0%, rgba(255,255,255,0) 60%), linear-gradient(180deg, #faf7ff 0%, #f3ecff 100%)",
+        background: "linear-gradient(135deg, #f4ecff 0%, #ede4ff 100%)",
         display: "flex",
         justifyContent: "center",
         alignItems: "flex-start",
-        padding: "clamp(28px, 5vw, 64px) 16px",
+        padding: "20px 12px",
       }}
     >
       <style>{`
         .survey-container {
-          padding: clamp(26px, 4vw, 54px);
+          padding: 50px;
         }
         .main-title {
-          font-family: "Outfit", "Inter", sans-serif;
-          font-size: clamp(30px, 5vw, 48px);
-          letter-spacing: -0.02em;
+          font-size: 48px;
+        }
+        .survey-question {
+          font-size: 22px;
+          margin-bottom: 15px;
+          line-height: 1.4;
+        }
+        .survey-option {
+          font-size: 16px;
         }
         @media (max-width: 600px) {
           .survey-container {
-            border-radius: 24px !important;
+            padding: 24px 16px !important;
+            border-radius: 20px !important;
           }
-          .survey-question { font-size: 18px !important; }
-          .survey-option { font-size: 15px !important; }
+          .main-title {
+            font-size: 28px !important;
+          }
+          .survey-question {
+            font-size: 18px !important;
+          }
+          .survey-option {
+            font-size: 15px !important;
+          }
         }
       `}</style>
 
@@ -131,34 +139,18 @@ function SurveyPage() {
           width: "100%",
           maxWidth: "800px",
           backgroundColor: "#fff",
-          borderRadius: "32px",
-          border: "1px solid rgba(27,15,51,0.08)",
-          boxShadow: "0 34px 80px rgba(27, 15, 51, 0.10)",
+          borderRadius: "30px",
+          boxShadow: "0 10px 30px rgba(0,0,0,0.08)",
           boxSizing: "border-box",
         }}
       >
-        <p
-          style={{
-            textAlign: "center",
-            fontFamily: '"Outfit", sans-serif',
-            fontSize: "12px",
-            fontWeight: 700,
-            letterSpacing: "0.24em",
-            textTransform: "uppercase",
-            color: BRAND,
-            marginBottom: "16px",
-          }}
-        >
-          Two minutes · Shape the app
-        </p>
-
         <h1
           className="main-title"
           style={{
             textAlign: "center",
             fontWeight: "700",
-            marginBottom: "12px",
-            color: INK,
+            marginBottom: "10px",
+            color: "#1a1a1a",
           }}
         >
           Help Shape Kribble
@@ -167,9 +159,9 @@ function SurveyPage() {
         <p
           style={{
             textAlign: "center",
-            color: "#5b5570",
+            color: "#666",
             fontSize: "16px",
-            lineHeight: "1.6",
+            lineHeight: "1.5",
             marginBottom: "30px",
           }}
         >
@@ -179,7 +171,7 @@ function SurveyPage() {
         <div
           style={{
             height: "8px",
-            background: "#efeaf9",
+            background: "#eee",
             borderRadius: "20px",
             marginBottom: "40px",
           }}
@@ -188,7 +180,7 @@ function SurveyPage() {
             style={{
               width: showSurvey ? "100%" : "20%",
               height: "100%",
-              background: `linear-gradient(90deg, ${BRAND}, #9b7bff)`,
+              background: "#7c4dff",
               borderRadius: "20px",
               transition: "0.4s ease-in-out",
             }}
@@ -229,13 +221,9 @@ function SurveyPage() {
             onClick={() => handleRoleSelection("Parent")}
             style={{
               ...roleButtonStyle,
-              background: userType === "Parent" ? BRAND : "#fff",
-              color: userType === "Parent" ? "#fff" : BRAND,
-              border: `1.5px solid ${userType === "Parent" ? BRAND : "#ddd4f5"}`,
-              boxShadow:
-                userType === "Parent"
-                  ? "0 12px 26px rgba(119,83,255,0.28)"
-                  : "none",
+              background: userType === "Parent" ? "linear-gradient(135deg, #8b5cf6, #7c4dff)" : "#fff",
+              color: userType === "Parent" ? "#fff" : "#7c4dff",
+              border: `2px solid #7c4dff`,
             }}
           >
             Parent
@@ -244,15 +232,9 @@ function SurveyPage() {
             onClick={() => handleRoleSelection("Daycare Owner")}
             style={{
               ...roleButtonStyle,
-              background: userType === "Daycare Owner" ? BRAND : "#fff",
-              color: userType === "Daycare Owner" ? "#fff" : BRAND,
-              border: `1.5px solid ${
-                userType === "Daycare Owner" ? BRAND : "#ddd4f5"
-              }`,
-              boxShadow:
-                userType === "Daycare Owner"
-                  ? "0 12px 26px rgba(119,83,255,0.28)"
-                  : "none",
+              background: userType === "Daycare Owner" ? "linear-gradient(135deg, #8b5cf6, #7c4dff)" : "#fff",
+              color: userType === "Daycare Owner" ? "#fff" : "#7c4dff",
+              border: `2px solid #7c4dff`,
             }}
           >
             Daycare Owner
@@ -333,7 +315,7 @@ function SurveyPage() {
               It works on my phone without a computer
             </label>
 
-            <h2 className="survey-question" style={{ marginTop: "30px" }}>Q5. Would you be interested in being a part of KRIBBLE? (Select all that apply)</h2>
+            <h2 className="survey-question" style={{ marginTop: "30px" }}>Q5. Would you be interested in being a part of Kribble? (Select all that apply)</h2>
             <label className="survey-option" style={checkboxLabelStyle}>
               <input type="checkbox" value="Yes, definitely interested" checked={q5.includes("Yes, definitely interested")} onChange={(e) => handleCheckboxChange(e.target.value, q5, setQ5)} style={checkboxStyle} />
               Yes, definitely interested
@@ -454,34 +436,26 @@ function SurveyPage() {
               onClick={sendEmail}
               style={{
                 ...buttonStyle,
-                background: isSubmitting ? "#b6afc9" : BRAND,
+                background: isSubmitting ? "#aaa" : "linear-gradient(135deg, #8b5cf6, #7c4dff)",
                 cursor: isSubmitting ? "not-allowed" : "pointer",
-                boxShadow: isSubmitting
-                  ? "none"
-                  : "0 14px 30px rgba(119,83,255,0.28)",
+                boxShadow: isSubmitting ? "none" : "0 6px 16px rgba(124,77,255,0.2)"
               }}
             >
               {isSubmitting ? "Submitting..." : "Submit Survey"}
             </button>
           </div>
         )}
-        </div>
       </div>
-
-      <Footer />
-    </>
+    </div>
   );
 }
 
 const inputStyle = {
   width: "100%",
-  padding: "16px 18px",
-  marginBottom: "18px",
-  borderRadius: "14px",
-  border: "1px solid #e5dff3",
-  background: "#fbfaff",
-  color: INK,
-  fontFamily: "inherit",
+  padding: "16px",
+  marginBottom: "20px",
+  borderRadius: "12px",
+  border: "1px solid #ddd",
   fontSize: "16px",
   boxSizing: "border-box",
   outline: "none",
@@ -490,25 +464,23 @@ const inputStyle = {
 const roleButtonStyle = {
   flex: 1,
   padding: "16px",
-  borderRadius: "14px",
-  fontFamily: '"Outfit", "Inter", sans-serif',
+  borderRadius: "12px",
   fontSize: "16px",
   fontWeight: "600",
   cursor: "pointer",
-  transition: "all 0.25s ease-in-out",
+  transition: "all 0.2s ease-in-out",
   outline: "none",
 };
 
 const buttonStyle = {
   width: "100%",
-  padding: "17px",
+  padding: "16px",
   color: "white",
   border: "none",
   borderRadius: "999px",
-  fontFamily: '"Outfit", "Inter", sans-serif',
   fontSize: "17px",
   fontWeight: "600",
-  transition: "all 0.25s ease-in-out",
+  transition: "all 0.2s ease-in-out"
 };
 
 const checkboxLabelStyle = {

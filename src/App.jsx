@@ -17,6 +17,7 @@ import {
   DevelopmentalStoryPage,
   FaqPage,
 } from "./pages/ChapterPages";
+import { PrivacyPage, TermsPage } from "./pages/LegalPages";
 
 import "./styles/kribble.css";
 import "./App.css";
@@ -44,6 +45,9 @@ function App() {
         <Route path="/about" element={<AboutPage />} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/survey" element={<SurveyPage />} />
+
+        <Route path="/privacy" element={<PrivacyPage />} />
+        <Route path="/terms" element={<TermsPage />} />
 
         <Route path="*" element={<HomePage />} />
       </Routes>

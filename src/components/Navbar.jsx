@@ -43,7 +43,7 @@ function Navbar() {
             className="k-btn k-btn--ghost k-nav__cta-mobile"
             onClick={(e) => e.preventDefault()}
           >
-            Centres
+           For Centres
           </button>
           <Link
             to="/contact"
@@ -61,7 +61,7 @@ function Navbar() {
             className="k-btn k-btn--ghost k-nav__cta-desktop"
             onClick={(e) => e.preventDefault()}
           >
-            Centres
+           For Centres
           </button>
 
           <Link

@@ -61,8 +61,8 @@ function WhyKribble({ showEyebrow = true }) {
           <div>
             {showEyebrow && <p className="k-eyebrow">Why Kribble</p>}
             <h2 className="k-h2">
-              The complete childcare marketplace,{" "}
-              <span className="k-em">in one calm app.</span>
+              Everything your child needs,{" "}
+              <span className="k-em">in one app.</span>
             </h2>
           </div>
           <p className="k-lead">

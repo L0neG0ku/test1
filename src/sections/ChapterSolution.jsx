@@ -7,19 +7,19 @@ const CARDS = [
     n: "01",
     Icon: ShieldCheck,
     title: "Verified centres",
-    body: "Every daycare and preschool is physically checked by our team before it appears on Kribble.",
+    body: "Every centre on Kribble goes through our verification process, so you can discover childcare with greater confidence.",
   },
   {
     n: "02",
     Icon: Grid,
-    title: "Everything in one place",
-    body: "Search, compare and shortlist with real, confirmed information, not guesswork from a group chat.",
+    title: "Compare with confidence",
+    body: "See the information that matters location, approach, facilities, fees, availability and more in one place. No more piecing it together from Google, Instagram and WhatsApp",
   },
   {
     n: "03",
     Icon: Wallet,
-    title: "Enrol, pay & stay connected",
-    body: "Handle admissions, fee payments and daily updates from your little one, all inside one calm app.",
+    title: "Choose, enroll & stay connected",
+    body: "Enquire, book care, complete enrolment, manage payments and stay connected with your child’s centre all through Kribble.",
   },
 ];
 
@@ -33,8 +33,8 @@ function ChapterSolution({ showEyebrow = true }) {
               <p className="k-eyebrow">Chapter II · The solution</p>
             )}
             <h2 className="k-h2">
-              Kribble brings it all into one{" "}
-              <span className="k-accent">simple, trusted</span> place.
+              Kribble brings {" "}
+              <span className="k-accent">discover, trust</span> and everyday childcare into one simple app.
             </h2>
           </div>
           <p className="k-lead">

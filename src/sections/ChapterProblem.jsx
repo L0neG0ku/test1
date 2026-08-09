@@ -1,18 +1,18 @@
 const CARDS = [
   {
     n: "01",
-    title: "Scattered and confusing",
-    body: "Information is spread across Google searches, WhatsApp groups and word of mouth, so you never really know what you're getting.",
+    title: "Too much information. Too little clarity",
+    body: "Google, Instagram, WhatsApp, reviews and word of mouth leave you with scattered information—and no clear way to know what’s actually right for your child.",
   },
   {
     n: "02",
-    title: "No way to know it's safe",
-    body: "You can't easily check if a centre is verified or legitimate. Photos online rarely match what you see when you visit.",
+    title: "You can’t see what you’re choosing",
+    body: "Is the centre safe? Is it genuine? What is the environment really like? Online information rarely tells you what you need to know before trusting someone with your child.",
   },
   {
     n: "03",
-    title: "Messy after you choose",
-    body: "Payments happen in cash, updates come through five different apps, and the paperwork lives in a folder somewhere.",
+    title: "Everything happens separately",
+    body: "Enquiries, visits, forms, payments, updates and communication happen across different places, making an already important decision unnecessarily stressful.",
   },
 ];
 

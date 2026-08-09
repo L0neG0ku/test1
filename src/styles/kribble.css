@@ -974,13 +974,12 @@ h1, h2, h3, h4, h5, .display {
   padding: clamp(46px, 6vw, 68px) 0 26px;
 }
 .k-footer__content {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 44px;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr) minmax(0, 1fr);
+  align-items: start;
+  gap: clamp(32px, 5vw, 72px);
 }
-.k-footer__brand { max-width: 300px; }
+.k-footer__brand { max-width: 320px; }
 .k-footer__logo {
   width: 175px;
   height: 52px;
@@ -996,26 +995,48 @@ h1, h2, h3, h4, h5, .display {
   color: var(--body);
   margin: 0;
 }
-.k-footer__col { display: flex; flex-direction: column; gap: 13px; }
-.k-footer__col h4 {
-  font-size: 18px;
-  margin-bottom: 4px;
-  color: var(--ink);
+.k-footer__col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 13px;
 }
-.k-footer__col a {
+.k-footer__col h4 {
+  font-family: var(--font-ui);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 8px;
+}
+.k-footer__col a,
+.k-footer__soon {
+  font-family: var(--font-body);
   font-size: 15px;
   color: var(--body);
   text-decoration: none;
   transition: color 0.25s ease, transform 0.25s ease;
   width: fit-content;
+  text-align: left;
 }
-.k-footer__col a:hover { color: var(--brand); transform: translateX(4px); }
+.k-footer__col a:hover,
+.k-footer__soon:hover { color: var(--brand); transform: translateX(4px); }
+
+/* centre links have no destination yet */
+.k-footer__soon {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
 
 .k-footer__social {
   display: flex;
-  gap: 16px;
-  font-size: 22px;
+  gap: 14px;
+  font-size: 20px;
   color: var(--body);
+  margin-top: 24px;
 }
 .k-footer__social a {
   display: grid;
@@ -1035,13 +1056,27 @@ h1, h2, h3, h4, h5, .display {
 }
 
 .k-footer__bottom {
-  margin-top: 44px;
+  margin-top: clamp(38px, 5vw, 58px);
   padding-top: 22px;
   border-top: 1px solid var(--line);
-  text-align: center;
   color: var(--muted);
   font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  flex-wrap: wrap;
 }
+.k-footer__legal {
+  display: flex;
+  gap: clamp(18px, 2.4vw, 32px);
+}
+.k-footer__legal a {
+  color: var(--muted);
+  text-decoration: none;
+  transition: color 0.25s ease;
+}
+.k-footer__legal a:hover { color: var(--brand); }
 
 /* ============================================================
    PAGE HEADER (for standalone chapter pages)
@@ -1074,6 +1109,53 @@ h1, h2, h3, h4, h5, .display {
   border-color: var(--ink);
   color: #fff;
 }
+
+/* ============================================================
+   LEGAL PAGES
+   ============================================================ */
+.k-legal__meta {
+  font-family: var(--font-ui);
+  font-size: 13.5px;
+  color: var(--muted);
+  margin-top: 20px;
+}
+.k-legal { max-width: 760px; }
+.k-legal__intro {
+  font-size: clamp(17px, 1.5vw, 20px);
+  line-height: 1.65;
+  color: var(--ink);
+  padding: 22px 26px;
+  background: var(--brand-50);
+  border-left: 3px solid var(--brand);
+  border-radius: 0 16px 16px 0;
+  margin-bottom: 46px;
+}
+.k-legal__block { margin-bottom: 40px; }
+.k-legal__block h2 {
+  font-size: clamp(20px, 2vw, 26px);
+  margin-bottom: 14px;
+}
+.k-legal__block p {
+  font-size: 16.5px;
+  line-height: 1.8;
+  margin-bottom: 14px;
+}
+.k-legal__block p:last-child { margin-bottom: 0; }
+.k-legal__block ul {
+  margin: 6px 0 0;
+  padding-left: 22px;
+}
+.k-legal__block li {
+  font-size: 16.5px;
+  line-height: 1.8;
+  margin-bottom: 8px;
+}
+.k-legal a {
+  color: var(--brand);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.k-legal a:hover { color: var(--brand-700); }
 
 /* CTA strip */
 .k-cta {
@@ -1181,6 +1263,9 @@ h1, h2, h3, h4, h5, .display {
   position: relative;
 }
 .k-devstory h2, .k-devstory h3, .k-devstory h4 { color: #fff; }
+/* ...except the report card, which is a light surface on the dark panel */
+.k-devstory .k-report h3,
+.k-devstory .k-report h4 { color: var(--ink); }
 .k-devstory__intro {
   font-size: clamp(16px, 1.35vw, 19px);
   line-height: 1.7;
@@ -1428,10 +1513,13 @@ h1, h2, h3, h4, h5, .display {
 .k-circle { animation: k-pop 0.9s cubic-bezier(0.2, 0.8, 0.3, 1) 0.34s both; }
 .k-float-card { animation: k-pop 0.8s cubic-bezier(0.2, 0.8, 0.3, 1) 0.5s both; }
 
-/* gentle float on the hero imagery */
+/* Gentle float on the hero imagery. The image is scaled slightly larger
+   than its frame so drifting never lifts an edge clear of the container and
+   exposes the background behind it. Travel is a percentage of the image, so
+   the headroom holds at every breakpoint. */
 @keyframes k-drift {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-12px); }
+  0%, 100% { transform: scale(1.1) translateY(0); }
+  50% { transform: scale(1.1) translateY(-2.5%); }
 }
 .k-blob img { animation: k-drift 9s ease-in-out 1.2s infinite; }
 .k-circle img { animation: k-drift 7s ease-in-out 1.6s infinite reverse; }
@@ -1496,6 +1584,9 @@ h1, h2, h3, h4, h5, .display {
   .k-showcase { margin-top: 48px; }
   .k-phone { max-width: 300px; }
   .k-why__note { right: 0; }
+  /* brand spans the top, the two link columns sit side by side beneath */
+  .k-footer__content { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .k-footer__brand { grid-column: 1 / -1; max-width: 420px; }
 }
 
 @media (max-width: 720px) {
@@ -1514,7 +1605,9 @@ h1, h2, h3, h4, h5, .display {
   .k-circle { width: 44%; bottom: 16%; }
   .k-float-card { position: static; margin-top: 26px; max-width: none; }
   .k-hero__actions .k-btn { flex: 1 1 100%; justify-content: center; }
-  .k-footer__content { flex-direction: column; gap: 34px; }
+  .k-footer__content { grid-template-columns: minmax(0, 1fr); gap: 34px; }
+  .k-footer__brand { grid-column: auto; }
+  .k-footer__bottom { justify-content: center; text-align: center; }
   .k-cta { flex-direction: column; align-items: flex-start; }
 }
 
