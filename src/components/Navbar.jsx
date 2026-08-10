@@ -3,6 +3,9 @@ import { Link, NavLink, useLocation } from "react-router-dom";
 import logo from "../assets/logo-purple.png";
 import { ArrowRight, Menu, Close } from "./icons";
 
+/* The centre-facing portal lives on its own subdomain */
+const CENTRES_URL = "https://centres.kribblecare.com/";
+
 const LINKS = [
   { to: "/problem", label: "Problem" },
   { to: "/solution", label: "Solution" },
@@ -38,13 +41,13 @@ function Navbar() {
           ))}
 
           {/* CTAs live inside the drawer on mobile */}
-          <button
-            type="button"
+          <a
+            href={CENTRES_URL}
+            onClick={close}
             className="k-btn k-btn--ghost k-nav__cta-mobile"
-            onClick={(e) => e.preventDefault()}
           >
-           For Centres
-          </button>
+            For Centres
+          </a>
           <Link
             to="/contact"
             onClick={close}
@@ -55,14 +58,9 @@ function Navbar() {
         </div>
 
         <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
-          {/* Placeholder until the centre-facing product exists */}
-          <button
-            type="button"
-            className="k-btn k-btn--ghost k-nav__cta-desktop"
-            onClick={(e) => e.preventDefault()}
-          >
-           For Centres
-          </button>
+          <a href={CENTRES_URL} className="k-btn k-btn--ghost k-nav__cta-desktop">
+            For Centres
+          </a>
 
           <Link
             to="/contact"
