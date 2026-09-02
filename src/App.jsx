@@ -4,6 +4,7 @@ import ScrollToTop from "./components/ScrollToTop";
 
 import HomePage from "./pages/HomePage";
 import SurveyPage from "./pages/SurveyPage";
+import WaitlistPage from "./pages/WaitlistPage";
 import AboutPage from "./pages/AboutPage";
 import ContactPage from "./pages/ContactPage";
 import {
@@ -45,6 +46,7 @@ function App() {
         <Route path="/about" element={<AboutPage />} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/survey" element={<SurveyPage />} />
+        <Route path="/waitlist" element={<WaitlistPage />} />
 
         <Route path="/privacy" element={<PrivacyPage />} />
         <Route path="/terms" element={<TermsPage />} />

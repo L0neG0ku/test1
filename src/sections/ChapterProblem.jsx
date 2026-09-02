@@ -2,7 +2,7 @@ const CARDS = [
   {
     n: "01",
     title: "Too much information. Too little clarity",
-    body: "Google, Instagram, WhatsApp, reviews and word of mouth leave you with scattered information—and no clear way to know what’s actually right for your child.",
+    body: "Google, Instagram, WhatsApp, reviews and word of mouth leave you with scattered information and no clear way to know what’s actually right for your child.",
   },
   {
     n: "02",
@@ -14,6 +14,11 @@ const CARDS = [
     title: "Everything happens separately",
     body: "Enquiries, visits, forms, payments, updates and communication happen across different places, making an already important decision unnecessarily stressful.",
   },
+   {
+    n: "04",
+    title: "Finding a trusted caregiver at home is even harder",
+    body: "When a parent needs someone to look after their child at home, they often rely on personal referrals, informal networks, or unstructured platforms with limited transparency around availability, experience, and trust.",
+  },
 ];
 
 function ChapterProblem({ showEyebrow = true }) {
@@ -24,8 +29,8 @@ function ChapterProblem({ showEyebrow = true }) {
           <div>
             {showEyebrow && <p className="k-eyebrow">Chapter I · The problem</p>}
             <h2 className="k-h2">
-              Choosing where your child spends the day is a big decision.{" "}
-              <span className="k-dim">It shouldn't feel like guesswork.</span>
+              Childcare is still fragmented, unpredictable,{" "}
+              <span className="k-dim">and difficult to access when parents actually need it.</span>
             </h2>
           </div>
           <p className="k-lead">

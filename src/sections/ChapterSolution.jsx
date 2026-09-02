@@ -38,8 +38,8 @@ function ChapterSolution({ showEyebrow = true }) {
             </h2>
           </div>
           <p className="k-lead">
-            One app. Verified centres. No more chasing information across ten
-            different places.
+           Kribble brings your trusted childcare centres and on-demand caregivers together in one trusted platform so parents can find the right care, 
+           wherever and whenever they need it.
           </p>
         </div>
 

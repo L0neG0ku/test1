@@ -9,22 +9,22 @@ function Hero() {
       <div className="k-shell k-hero__grid">
         <div>
           <h1 className="k-h1 k-hero__title">
-            Find childcare
+            Childcare,
             <br />
-            you can <span className="k-underline">trust.</span>
+           wherever you <span className="k-underline">need it.</span>
           </h1>
 
           <p className="k-lead">
-          Discover, compare and choose trusted daycares and preschools. 
-          Book care, make payments, stay connected with updates, and access your child’s records all in one simple app.
+          Discover trusted childcare centres nearby or book an on-demand nanny for your home. 
+          Stay connected with updates and access your child growth analytics in one App
           </p>
 
           <div className="k-hero__actions">
-            <Link to="/survey" className="k-btn k-btn--primary">
-              Explore Kribble <ArrowRight />
+            <Link to="/waitlist" className="k-btn k-btn--primary">
+              Join the waitlist <ArrowRight />
             </Link>
-            <Link to="/how-it-works" className="k-btn k-btn--ghost">
-              How it works
+            <Link to="/survey" className="k-btn k-btn--ghost">
+              Take survey
             </Link>
           </div>
 

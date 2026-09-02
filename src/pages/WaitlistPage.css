@@ -1,0 +1,511 @@
+/* ============================================================
+   WAITLIST — hero with the form, then the in-app showcase
+   ============================================================ */
+
+.wl {
+  position: relative;
+  overflow: hidden;
+  padding: clamp(44px, 6vw, 84px) 0 clamp(64px, 7vw, 100px);
+  background: radial-gradient(120% 90% at 12% -10%, #f0e6ff 0%, rgba(246, 240, 255, 0) 62%),
+    radial-gradient(90% 80% at 100% 0%, #ece2ff 0%, rgba(255, 255, 255, 0) 55%),
+    linear-gradient(180deg, #faf7ff 0%, #ffffff 100%);
+}
+
+.wl__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.85fr);
+  gap: clamp(32px, 5vw, 72px);
+  align-items: start;
+}
+
+.wl__copy .k-h1 {
+  margin-bottom: 22px;
+  max-width: 14ch;
+}
+
+/* ---------- Points ---------- */
+.wl__points {
+  list-style: none;
+  margin: 30px 0 0;
+  padding: 0;
+  display: grid;
+  gap: 12px;
+}
+
+.wl__points li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 16px;
+  color: var(--ink);
+}
+
+.wl__tick {
+  display: grid;
+  place-items: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--brand-100);
+  color: var(--brand);
+  flex: none;
+}
+
+/* ---------- Small app screenshots ---------- */
+.wl__shots {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-top: clamp(30px, 4vw, 44px);
+  /* The fan below is a transform, so it adds no height. Reserve the 28px it
+     hangs down by, otherwise it lands on top of the caption. */
+  padding-bottom: 28px;
+}
+
+.wl__shot {
+  margin: 0;
+  width: 118px;
+  flex: none;
+  border: 5px solid var(--ink);
+  border-radius: 20px;
+  background: var(--ink);
+  overflow: hidden;
+  line-height: 0;
+  box-shadow: var(--shadow-md);
+  transition: transform 0.35s cubic-bezier(0.2, 0.8, 0.3, 1);
+}
+
+/* Fanned slightly, so three screens read as a set rather than a row. */
+.wl__shot:nth-child(2) { transform: translateY(14px); }
+.wl__shot:nth-child(3) { transform: translateY(28px); }
+.wl__shot:hover { transform: translateY(-6px); }
+.wl__shot:nth-child(2):hover { transform: translateY(8px); }
+.wl__shot:nth-child(3):hover { transform: translateY(22px); }
+
+.wl__shot img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 15px;
+}
+
+.wl__shots-note {
+  margin-top: 16px;
+  font-family: var(--font-ui);
+  font-size: 11.5px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+/* ---------- Form panel ---------- */
+.wl__panel {
+  position: sticky;
+  top: calc(var(--nav-h) + 24px);
+}
+
+.wl__form,
+.wl__done {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: var(--r-lg);
+  padding: clamp(26px, 3.2vw, 40px);
+  box-shadow: var(--shadow-lg);
+}
+
+.wl__form-title {
+  font-size: clamp(23px, 2.2vw, 28px);
+  margin-bottom: 8px;
+}
+
+.wl__form-sub {
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--body);
+  margin-bottom: 26px;
+}
+
+.wl__field {
+  margin-bottom: 20px;
+}
+
+.wl__field label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-ui);
+  font-size: 11.5px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 9px;
+}
+
+/* Says "you can skip this" without adding a second line of hint text. */
+.wl__opt {
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 999px;
+  background: var(--brand-50);
+  color: var(--brand-700);
+  border: 1px solid var(--brand-100);
+}
+
+.wl__field input {
+  width: 100%;
+  background: #fbfaff;
+  border: 1px solid #e5dff3;
+  border-radius: 14px;
+  padding: 15px 17px;
+  color: var(--ink);
+  font-family: inherit;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
+}
+
+.wl__field input::placeholder { color: #b3aec4; }
+
+.wl__field input:focus {
+  border-color: var(--brand);
+  background: #fff;
+  box-shadow: 0 0 0 4px var(--brand-50);
+}
+
+.wl__hint {
+  margin-top: 8px;
+  font-size: 12.5px;
+  color: var(--muted);
+}
+
+.wl__form .k-btn--primary {
+  width: 100%;
+  justify-content: center;
+  padding: 16px;
+  margin-top: 4px;
+}
+
+.wl__error {
+  margin-top: 13px;
+  font-size: 14px;
+  color: #d64545;
+  text-align: center;
+}
+
+.wl__note {
+  margin-top: 16px;
+  font-size: 13.5px;
+  line-height: 1.6;
+  color: var(--muted);
+  text-align: center;
+}
+
+.wl__note a {
+  color: var(--brand);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* ---------- Success ---------- */
+.wl__done {
+  text-align: center;
+  display: grid;
+  justify-items: center;
+  gap: 14px;
+}
+
+.wl__done-tick {
+  display: grid;
+  place-items: center;
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  background: var(--brand-100);
+  color: var(--brand);
+}
+
+.wl__done h2 { font-size: clamp(22px, 2.2vw, 28px); }
+
+.wl__done p {
+  font-size: 15.5px;
+  line-height: 1.7;
+  color: var(--body);
+  max-width: 32ch;
+}
+
+/* ---------- Scroll cue ---------- */
+.wl__scroll {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin: clamp(44px, 6vw, 72px) auto 0;
+  width: fit-content;
+  font-family: var(--font-ui);
+  font-size: 11.5px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--muted);
+  text-decoration: none;
+  transition: color 0.25s ease;
+}
+
+.wl__scroll:hover { color: var(--brand); }
+
+.wl__scroll i {
+  display: block;
+  width: 1px;
+  height: 34px;
+  background: linear-gradient(180deg, var(--brand-200), transparent);
+  animation: wl-cue 2.2s ease-in-out infinite;
+}
+
+@keyframes wl-cue {
+  0%, 100% { opacity: 0.35; transform: scaleY(0.7); transform-origin: top; }
+  50% { opacity: 1; transform: scaleY(1); transform-origin: top; }
+}
+
+/* ============================================================
+   SHOWCASE — alternating screen + copy
+   ============================================================ */
+.wl-show {
+  padding-bottom: clamp(48px, 6vw, 78px);
+}
+
+.wl-show__head {
+  margin-bottom: clamp(48px, 6vw, 84px);
+}
+
+/* The width limit belongs on the heading, not the wrapper: `ch` resolves
+   against the element's own font, so 20ch on a 16px div was ~160px and broke
+   the display type onto one word per line. */
+.wl-show__head .k-h2 {
+  max-width: 18ch;
+}
+
+.wl-show__rows {
+  display: grid;
+  gap: clamp(56px, 8vw, 120px);
+}
+
+.wl-row {
+  display: grid;
+  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1fr);
+  gap: clamp(28px, 5vw, 76px);
+  align-items: center;
+}
+
+/* Alternate sides so the eye zig-zags down the page. */
+.wl-row:nth-child(even) .wl-row__art { order: 2; }
+
+.wl-row__art {
+  position: relative;
+  display: grid;
+  place-items: center;
+}
+
+.wl-row__glow {
+  position: absolute;
+  inset: 6% 10%;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(119, 83, 255, 0.26), transparent 68%);
+  filter: blur(10px);
+}
+
+.wl-row__phone {
+  position: relative;
+  margin: 0;
+  width: 100%;
+  max-width: 244px;
+  border: 8px solid var(--ink);
+  border-radius: 38px;
+  background: var(--ink);
+  overflow: hidden;
+  line-height: 0;
+  box-shadow: var(--shadow-lg);
+  transition: transform 0.45s cubic-bezier(0.2, 0.8, 0.3, 1);
+}
+
+.wl-row:hover .wl-row__phone { transform: translateY(-10px); }
+
+.wl-row__phone img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 30px;
+}
+
+/* Copy side */
+.wl-row__copy { position: relative; }
+
+/* The number used to sit behind the icon on a negative margin, which buried it
+   on narrow screens. It now shares a row with the icon, so it can never hide. */
+.wl-row__meta {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.wl-row__n {
+  font-family: var(--font-display);
+  font-size: clamp(38px, 4.6vw, 56px);
+  font-weight: 700;
+  line-height: 1;
+  color: var(--brand);
+  opacity: 0.3;
+}
+
+.wl-row__icon {
+  display: grid;
+  place-items: center;
+  width: 50px;
+  height: 50px;
+  flex: none;
+  border-radius: 15px;
+  background: var(--brand-100);
+  color: var(--brand);
+}
+
+.wl-row__copy h3 {
+  font-size: clamp(24px, 2.8vw, 34px);
+  line-height: 1.2;
+  margin-bottom: 14px;
+  max-width: 16ch;
+}
+
+.wl-row__copy p {
+  font-size: clamp(16px, 1.3vw, 18px);
+  line-height: 1.75;
+  color: var(--body);
+  max-width: 44ch;
+}
+
+.wl-row__chips {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  margin: 26px 0 0;
+  padding: 0;
+}
+
+.wl-row__chips li {
+  font-family: var(--font-ui);
+  font-size: 13px;
+  font-weight: 600;
+  padding: 8px 15px;
+  border-radius: 999px;
+  background: var(--brand-50);
+  color: var(--brand-700);
+  border: 1px solid var(--brand-100);
+}
+
+/* Closing block: "and many more" sitting directly above the CTA, kept tight
+   so it reads as the end of the list rather than a gap in the page. */
+.wl-show__end {
+  display: grid;
+  justify-items: center;
+  gap: 22px;
+  margin-top: clamp(36px, 4vw, 56px);
+}
+
+.wl-show__more {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: clamp(17px, 1.6vw, 21px);
+  color: var(--brand);
+}
+
+/* Hairlines either side, fading out from the words. */
+.wl-show__more span {
+  display: block;
+  width: clamp(36px, 10vw, 96px);
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--brand-200));
+}
+
+.wl-show__more span:last-child {
+  background: linear-gradient(90deg, var(--brand-200), transparent);
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 1024px) {
+  .wl__grid { grid-template-columns: minmax(0, 1fr); }
+  .wl__panel { position: static; }
+  .wl__copy .k-h1 { max-width: none; }
+
+  .wl-row {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 30px;
+  }
+  /* Screens lead on narrow layouts, whichever side they sat on. */
+  .wl-row:nth-child(even) .wl-row__art { order: 0; }
+  .wl-row__glow { inset: 12% 22%; }
+}
+
+@media (max-width: 720px) {
+  /* No room to fan three screens on a phone: lay them out as equal columns
+     that share whatever width there is, all sitting on the same baseline. */
+  .wl__shots {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 10px;
+    padding-bottom: 0;
+    max-width: 340px;
+  }
+
+  .wl__shot,
+  .wl__shot:nth-child(2),
+  .wl__shot:nth-child(3) {
+    width: auto;
+    border-width: 4px;
+    transform: none;
+    /* The three screenshots are a few pixels apart in aspect ratio, which left
+       a ragged bottom edge once the fan was gone. Pin the frame and let the
+       image cover it, so the row lines up top and bottom. */
+    aspect-ratio: 9 / 19.5;
+  }
+
+  .wl__shot img {
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+    border-radius: 11px;
+  }
+
+  .wl__shot:hover,
+  .wl__shot:nth-child(2):hover,
+  .wl__shot:nth-child(3):hover {
+    transform: translateY(-4px);
+  }
+
+  .wl__shots-note { margin-top: 14px; }
+
+  .wl-row__phone { max-width: 210px; }
+  .wl-row__meta { gap: 13px; }
+  .wl-row__copy h3 { max-width: none; }
+}
+
+@media (max-width: 480px) {
+  .wl__form,
+  .wl__done { padding: 24px 20px; }
+
+  .wl__field { margin-bottom: 18px; }
+  .wl__points li { font-size: 15.5px; }
+  .wl-row__chips li { font-size: 12.5px; padding: 7px 13px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .wl__scroll i { animation: none; }
+}
