@@ -356,6 +356,45 @@ h1, h2, h3, h4, h5, .display {
   margin-top: 38px;
 }
 
+/* Shown in place of the hero buttons once a visitor has done the survey. */
+.k-hero__thanks {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  margin-top: 38px;
+  max-width: 470px;
+  padding: 18px 22px;
+  background: #fff;
+  border: 1px solid var(--brand-100);
+  border-radius: var(--r-sm);
+  box-shadow: var(--shadow-md);
+}
+
+.k-hero__thanks b {
+  display: block;
+  font-family: var(--font-ui);
+  font-size: 16px;
+  color: var(--ink);
+  margin-bottom: 4px;
+}
+
+.k-hero__thanks p {
+  font-size: 14.5px;
+  line-height: 1.6;
+  color: var(--body);
+}
+
+.k-hero__thanks-tick {
+  display: grid;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  flex: none;
+  border-radius: 50%;
+  background: var(--brand);
+  color: #fff;
+}
+
 .k-trust {
   display: flex;
   align-items: center;
@@ -1501,12 +1540,18 @@ h1, h2, h3, h4, h5, .display {
 .k-hero__title,
 .k-hero .k-lead,
 .k-hero__actions,
+.k-hero__thanks,
 .k-trust {
   animation: k-rise 0.75s cubic-bezier(0.2, 0.8, 0.3, 1) both;
 }
 .k-hero__title { animation-delay: 0.06s; }
 .k-hero .k-lead { animation-delay: 0.14s; }
-.k-hero__actions { animation-delay: 0.22s; }
+.k-hero__actions,
+.k-hero__thanks { animation-delay: 0.22s; }
+/* Arriving straight from the survey: pop in, so the thanks is noticed. */
+.k-hero__thanks.is-fresh {
+  animation: k-pop 0.7s cubic-bezier(0.2, 0.8, 0.3, 1) 0.3s both;
+}
 .k-trust { animation-delay: 0.3s; }
 
 .k-blob { animation: k-pop 0.9s cubic-bezier(0.2, 0.8, 0.3, 1) 0.18s both; }

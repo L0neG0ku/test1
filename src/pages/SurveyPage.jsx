@@ -1,7 +1,48 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import emailjs from "@emailjs/browser";
+import { markSurveyDone } from "../lib/surveyStatus";
+
+/* The thank-you email sent to the person who filled the survey. It needs its
+   own EmailJS template (To Email set to {{email}}), separate from the one that
+   delivers responses to the team. Its ID goes in .env as
+   VITE_EMAILJS_THANKYOU_TEMPLATE. Until then the survey still works, it just
+   skips the thank-you. */
+const THANK_YOU_TEMPLATE = import.meta.env.VITE_EMAILJS_THANKYOU_TEMPLATE || "";
+
+const ROLE_LINES = {
+  Parent:
+    "As a parent, you've told us what actually matters when choosing care for your child. That is exactly what we're building Kribble around.",
+  "Daycare Owner":
+    "As a childcare provider, you've told us what really happens day to day in running a centre. That is exactly what we're building Kribble around.",
+};
+
+function sendThankYou({ name, email, userType }) {
+  if (!THANK_YOU_TEMPLATE) {
+    console.warn("Survey thank-you email skipped: VITE_EMAILJS_THANKYOU_TEMPLATE is not set.");
+    return;
+  }
+
+  emailjs
+    .send(
+      "service_pe450l4",
+      THANK_YOU_TEMPLATE,
+      {
+        name,
+        first_name: name.trim().split(/\s+/)[0],
+        email,
+        userType,
+        role_line: ROLE_LINES[userType] || ROLE_LINES.Parent,
+      },
+      "taf9C1ZSN7pSkP8Zl"
+    )
+    // The response already reached the team, so a failed courtesy email
+    // must not undo the success the visitor has just seen.
+    .catch((error) => console.error("Survey thank-you email failed:", error));
+}
 
 function SurveyPage() {
+  const navigate = useNavigate();
   const [showSurvey, setShowSurvey] = useState(false);
   const [userType, setUserType] = useState("");
 
@@ -70,22 +111,18 @@ function SurveyPage() {
     emailjs
       .send("service_pe450l4", "template_zswwmx9", templateParams, "taf9C1ZSN7pSkP8Zl")
       .then(() => {
-        alert("Thank you for helping shape Kribble!");
-        
-        // Reset everything back to the starting homepage state
-        setName("");
-        setEmail("");
-        setPhone("");
-        setUserType("");
-        setShowSurvey(false);
-        setQ1([]); setQ2([]); setQ3([]); setQ4([]); setQ5([]);
+        markSurveyDone();
+        sendThankYou({ name, email, userType });
+
+        // Back to the homepage, which now thanks them instead of showing
+        // the "Join the waitlist" and "Take survey" buttons.
+        navigate("/", { state: { surveyJustDone: true } });
       })
       .catch((error) => {
         console.error(error);
         alert("Failed to submit survey.");
-      })
-      .finally(() => {
-        // Unlock button regardless of success or failure
+        // Unlock only on failure, so they can retry. On success the page is
+        // already navigating away.
         setIsSubmitting(false);
       });
   };
