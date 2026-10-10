@@ -17,6 +17,17 @@ const ROLE_LINES = {
     "As a childcare provider, you've told us what really happens day to day in running a centre. That is exactly what we're building Kribble around.",
 };
 
+/* WhatsApp copy of the thank-you. Sent by our own endpoint (api/whatsapp-thanks.js)
+   because the WhatsApp token has to stay server side. Fire and forget: the
+   response is already with the team, so a failure here never reaches the visitor. */
+function sendWhatsApp({ name, phone }) {
+  fetch("/api/whatsapp-thanks", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ phone, firstName: name.trim().split(/\s+/)[0] }),
+  }).catch((error) => console.error("WhatsApp thank-you failed:", error));
+}
+
 function sendThankYou({ name, email, userType }) {
   if (!THANK_YOU_TEMPLATE) {
     console.warn("Survey thank-you email skipped: VITE_EMAILJS_THANKYOU_TEMPLATE is not set.");
@@ -113,6 +124,7 @@ function SurveyPage() {
       .then(() => {
         markSurveyDone();
         sendThankYou({ name, email, userType });
+        sendWhatsApp({ name, phone });
 
         // Back to the homepage, which now thanks them instead of showing
         // the "Join the waitlist" and "Take survey" buttons.

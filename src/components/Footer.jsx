@@ -93,7 +93,7 @@ function Footer() {
         </div>
 
         <div className="k-footer__bottom">
-          <span>© 2026 Kribble. All rights reserved.</span>
+          <span>© 2026 Little Orbit Technology Private Limited. All rights reserved.</span>
 
           <nav className="k-footer__legal">
             <Link to="/privacy">Privacy</Link>

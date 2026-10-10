@@ -35,10 +35,11 @@ function Hero() {
                 <Check size={16} />
               </span>
               <div>
-                <b>{justDone ? "Thank you, your responses are in." : "Thanks for taking our survey."}</b>
+                <b>Welcome to the Kribble community.</b>
                 <p>
-                  You're on our list. We'll be in touch the moment Kribble opens
-                  near you.
+                  {justDone
+                    ? "Your answers are in, and you're on our early access list. We'll be in touch the moment Kribble opens near you."
+                    : "You're on our early access list. We'll be in touch the moment Kribble opens near you."}
                 </p>
               </div>
             </div>
