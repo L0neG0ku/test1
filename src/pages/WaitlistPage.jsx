@@ -5,14 +5,8 @@ import Footer from "../components/Footer";
 import useReveal from "../hooks/useReveal";
 import listingShot from "../assets/peak.png";
 import { ArrowRight, Check, ShieldCheck, Bell, Brain } from "../components/icons";
+import { EMAILJS } from "../lib/emailjs";
 import "./WaitlistPage.css";
-
-/* Same EmailJS destination the survey posts to. */
-const EMAILJS = {
-  service: "service_pe450l4",
-  template: "template_zswwmx9",
-  publicKey: "taf9C1ZSN7pSkP8Zl",
-};
 
 const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
@@ -108,7 +102,7 @@ function WaitlistPage() {
     emailjs
       .send(
         EMAILJS.service,
-        EMAILJS.template,
+        EMAILJS.teamTemplate,
         {
           name,
           // The shared template expects both slots filled, so label the blank one.

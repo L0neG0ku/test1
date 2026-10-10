@@ -1,6 +1,7 @@
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
 import { ArrowRight, Mail } from "../components/icons";
+import { EMAILJS } from "../lib/emailjs";
 
 const EMAIL = "team@kribblecare.com";
 
@@ -22,8 +23,8 @@ function ContactSection({ showEyebrow = true }) {
 
     emailjs
       .send(
-        "service_pe450l4",
-        "template_zswwmx9",
+        EMAILJS.service,
+        EMAILJS.teamTemplate,
         {
           name: form.name,
           email: form.email,
@@ -31,7 +32,7 @@ function ContactSection({ showEyebrow = true }) {
           userType: "Website enquiry",
           message: form.message,
         },
-        "taf9C1ZSN7pSkP8Zl"
+        EMAILJS.publicKey
       )
       .then(() => {
         setStatus("sent");
