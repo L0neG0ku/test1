@@ -1,9 +1,25 @@
 {
   "cleanUrls": true,
   "redirects": [
-    { "source": "/blog", "destination": "/blog/", "permanent": true },
-    { "source": "/blog/:slug([a-z0-9-]+)", "destination": "/blog/:slug/", "permanent": true },
-    { "source": "/blog/category/:cat([a-z0-9-]+)", "destination": "/blog/category/:cat/", "permanent": true },
-    { "source": "/:page((?!blog$)[a-z-]+)/", "destination": "/:page", "permanent": true }
+    {
+      "source": "/blog",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/:slug([a-z0-9-]+)",
+      "destination": "/blog/:slug/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/category/:cat([a-z0-9-]+)",
+      "destination": "/blog/category/:cat/",
+      "permanent": true
+    },
+    {
+      "source": "/:page(problem|solution|how-it-works|why-parents|what-we-cover|team|why-kribble|developmental-story|faq|about|contact|survey|waitlist|privacy|terms)/",
+      "destination": "/:page",
+      "permanent": true
+    }
   ]
 }
