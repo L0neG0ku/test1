@@ -44,7 +44,7 @@ function AboutPage() {
           <div className="k-why__art">
             <div className="k-why__img">
               <img
-                src="/mission.png"
+                src="/mission.webp"
                 alt="A parent and child together"
                 loading="lazy"
                 decoding="async"

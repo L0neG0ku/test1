@@ -1,32 +1,34 @@
 /**
  * Privacy and Terms.
  *
- * The content below describes only what this site actually does today: the
- * contact form and the survey, both delivered by EmailJS, plus the Google
- * Fonts request. It is a factual starting point, not legal advice — have it
+ * The content below describes only what this site actually does: the contact
+ * form, waitlist and survey (delivered by EmailJS), the survey thank-you
+ * messages, Google Fonts, and the analytics and advertising tags configured in
+ * tracking.config.json (Google Analytics, Google Tag Manager, Meta Pixel). It is a factual starting point, not legal advice — have it
  * reviewed before launch, and update it whenever data handling changes.
  */
 import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
 import useReveal from "../hooks/useReveal";
 
-const UPDATED = "10 August 2026";
+const UPDATED = "14 October 2026";
 const EMAIL = "team@kribblecare.com";
 
 const PRIVACY = [
   {
     h: "What this covers",
     p: [
-      "This policy explains how Kribble handles information collected through this website. Kribble is early stage, and the site is currently an information page, a contact form and a research survey.",
+      "This policy explains how Kribble handles information collected through this website. Kribble is early stage, and the site is currently an information page, a blog, a contact form, a waitlist and a research survey.",
     ],
   },
   {
     h: "What we collect",
     p: [
-      "We only collect what you type into a form. Nothing else on this site asks for your details.",
+      "The personal details we hold are the ones you type into a form. Separately, we measure how the site is used, as described under \"Analytics and advertising\" below.",
     ],
     ul: [
       "Contact form: your name, your email address and your message.",
+      "Waitlist: your name and the email address or mobile number you give us.",
       "Survey: your name, email address, contact number, whether you are a parent or a daycare owner, and your answers to the survey questions.",
     ],
   },
@@ -41,7 +43,16 @@ const PRIVACY = [
     p: [
       "Form submissions are delivered to our team inbox by EmailJS, a third party email delivery service. Your submission passes through their systems in order to be sent, and is subject to their own privacy terms.",
       "This site also loads fonts from Google Fonts. That request tells Google your IP address and browser, as any request to an external server would.",
-      "We do not run advertising trackers, and we do not sell or rent your information to anyone.",
+      "When you complete the survey we send a thank-you to the email address you gave, and may send one to your number on WhatsApp.",
+      "We do not sell or rent your information to anyone.",
+    ],
+  },
+  {
+    h: "Analytics and advertising",
+    p: [
+      "We use Google Analytics and Google Tag Manager to understand how visitors use the site, such as which pages are read and whether a form was completed. We use the Meta Pixel to measure our adverts on Facebook and Instagram and to show them to people likely to be interested.",
+      "These tools set cookies and receive information about your device, browser, approximate location and the pages you visit. They never receive what you type into our forms: we only tell them that a form was submitted, not your name, email, phone number or answers.",
+      "You can opt out of Google Analytics with Google's browser add-on (tools.google.com/dlpage/gaoptout), control ad preferences in your Facebook or Instagram settings, or block cookies in your browser. The site works fully with them blocked.",
     ],
   },
   {
@@ -53,7 +64,7 @@ const PRIVACY = [
   {
     h: "Your choices",
     p: [
-      `Write to ${EMAIL} to see what we hold about you, correct it, delete it, or tell us to stop contacting you. There is no mailing list to unsubscribe from — we only email you back about what you sent us.`,
+      `Write to ${EMAIL} to see what we hold about you, correct it, delete it, or tell us to stop contacting you. There is no mailing list to unsubscribe from. We only contact you about what you sent us, and to tell you when Kribble opens near you if you joined the waitlist.`,
     ],
   },
   {

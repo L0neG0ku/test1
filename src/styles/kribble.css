@@ -1365,6 +1365,22 @@ h1, h2, h3, h4, h5, .display {
   color: var(--muted);
   margin-bottom: 4px;
 }
+/* Marks the card as illustrative, so the sample figures aren't read as a real result. */
+.k-report__example {
+  display: inline-block;
+  margin-left: 8px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: var(--brand-50);
+  border: 1px solid var(--brand-100);
+  color: var(--brand-700);
+  font-family: var(--font-ui);
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  vertical-align: 1px;
+}
 .k-report__head h3 {
   font-size: clamp(20px, 1.9vw, 26px);
   margin: 0;
@@ -1667,3 +1683,18 @@ h1, h2, h3, h4, h5, .display {
     transform: none !important;
   }
 }
+
+/* Quiet in-copy links from homepage sections to the blog's guides. */
+.k-guide-links {
+  margin-top: clamp(28px, 3vw, 40px);
+  font-size: 15.5px;
+  color: var(--body);
+}
+.k-guide-links a {
+  color: var(--brand-700);
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-color: var(--brand-200);
+  text-underline-offset: 3px;
+}
+.k-guide-links a:hover { text-decoration-color: var(--brand); }

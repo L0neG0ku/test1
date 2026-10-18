@@ -3,9 +3,10 @@ import { Link } from "react-router-dom";
 import emailjs from "@emailjs/browser";
 import Footer from "../components/Footer";
 import useReveal from "../hooks/useReveal";
-import listingShot from "../assets/peak.png";
+import listingShot from "../assets/peak.webp";
 import { ArrowRight, Check, ShieldCheck, Bell, Brain } from "../components/icons";
 import { EMAILJS } from "../lib/emailjs";
+import { trackEvent } from "../lib/analytics";
 import "./WaitlistPage.css";
 
 const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -118,6 +119,7 @@ function WaitlistPage() {
       .then(() => {
         setStatus("done");
         setForm({ name: "", email: "", phone: "" });
+        trackEvent("waitlist_signup");
       })
       .catch((err) => {
         console.error(err);

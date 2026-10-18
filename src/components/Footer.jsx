@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 import logo from "../assets/logo-purple.png";
+import { trackCtaClick } from "../lib/analytics";
 
 /* Parent-facing links all point at pages that exist on the site. */
 const PARENT_LINKS = [
@@ -10,6 +11,8 @@ const PARENT_LINKS = [
   { to: "/faq", label: "FAQ" },
   { to: "/survey", label: "Take the Survey" },
   { to: "/about", label: "About Kribble" },
+  // Static pages outside the React app, so rendered as a plain <a>.
+  { href: "/blog/", label: "Blog" },
 ];
 
 /* Centre-facing product does not exist yet, so these are inert for now —
@@ -49,8 +52,8 @@ function Footer() {
               <img src={logo} alt="Kribble" />
             </span>
             <p>
-              India's first verified discovery platform for daycares and
-              preschools, so every mother can find care she trusts.
+              A verified discovery platform for daycares and preschools,
+              starting in Gurugram, so every parent can find care they trust.
             </p>
 
             <div className="k-footer__social">
@@ -70,11 +73,17 @@ function Footer() {
 
           <div className="k-footer__col">
             <h4>For Parents</h4>
-            {PARENT_LINKS.map((l) => (
-              <Link key={l.to} to={l.to}>
-                {l.label}
-              </Link>
-            ))}
+            {PARENT_LINKS.map((l) =>
+              l.href ? (
+                <a key={l.href} href={l.href}>
+                  {l.label}
+                </a>
+              ) : (
+                <Link key={l.to} to={l.to}>
+                  {l.label}
+                </Link>
+              )
+            )}
           </div>
 
           <div className="k-footer__col">
@@ -84,7 +93,11 @@ function Footer() {
                 key={label}
                 type="button"
                 className="k-footer__soon"
-                onClick={(e) => e.preventDefault()}
+                onClick={(e) => {
+                  e.preventDefault();
+                  // No demo or partner form exists yet, so record the interest as a click.
+                  trackCtaClick(label.toLowerCase().replace(/\s+/g, "_"));
+                }}
               >
                 {label}
               </button>

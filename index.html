@@ -1,17 +1,45 @@
 <!doctype html>
-<html lang="en">
+<html lang="en-IN">
   <head>
     <meta charset="UTF-8" />
-    <!-- Generated from src/assets/logo-purple.png, cropped square so the
-         wordmark fills the icon. Swap to /favicon-mark.png for the "k" only. -->
-    <link rel="icon" type="image/png" href="/favicon.png" />
-    <link rel="apple-touch-icon" href="/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- These are the homepage values. scripts/prerender.mjs rewrites the
+         title, description, canonical and social tags for every other page
+         from src/seo/routes.js, and adds structured data on the homepage. -->
+    <title>Kribble: Verified Daycares & Preschools in Gurugram</title>
     <meta
       name="description"
-      content="Kribble helps you discover verified daycares, preschools and playschools near you. Compare them, enrol and pay, all in one app."
+      content="Find, compare and book verified daycares, preschools and playschools in Gurugram, from a single day to a full year. Join the Kribble waitlist."
     />
-    <title>Kribble | Childcare Simplified</title>
+    <link rel="canonical" href="https://www.kribblecare.com/" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta name="theme-color" content="#7753FF" />
+
+    <meta property="og:site_name" content="Kribble" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_IN" />
+    <meta property="og:title" content="Kribble: Verified Daycares & Preschools in Gurugram" />
+    <meta
+      property="og:description"
+      content="Find, compare and book verified daycares, preschools and playschools in Gurugram, from a single day to a full year. Join the Kribble waitlist."
+    />
+    <meta property="og:url" content="https://www.kribblecare.com/" />
+    <meta property="og:image" content="https://www.kribblecare.com/blog/og/home.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Kribble: Verified Daycares & Preschools in Gurugram" />
+    <meta
+      name="twitter:description"
+      content="Find, compare and book verified daycares, preschools and playschools in Gurugram, from a single day to a full year. Join the Kribble waitlist."
+    />
+    <meta name="twitter:image" content="https://www.kribblecare.com/blog/og/home.png" />
+    <link rel="alternate" type="application/rss+xml" title="Kribble blog" href="https://www.kribblecare.com/blog/rss.xml" />
+
+    <!-- Wordmark cropped square from logo-purple.png. -->
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="icon" href="/favicon.ico" sizes="48x48" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />

@@ -1,4 +1,3 @@
-/* global process */
 /* Sends the survey thank-you as a WhatsApp message via Meta's WhatsApp Cloud API.
 
    Runs on Vercel as a serverless function so the access token never reaches the

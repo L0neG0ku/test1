@@ -1,0 +1,51 @@
+# Kribble
+
+> Kribble is a childcare discovery and booking app for parents in India, launching first in Gurugram (Gurgaon). Its team physically visits and checks every daycare, preschool and playschool before listing it. Parents will be able to compare fees, plans and facilities, book anything from a single day (One-Day Daycare) to a full year, pay in the app and get daily updates from the centre. Kribble is pre-launch; parents can join the waitlist at kribblecare.com.
+
+## What Kribble is
+
+- Kribble is a childcare discovery and booking app for parents in India, starting in Gurugram (Gurgaon). It is built by Little Orbit Technology Private Limited. Contact: team@kribblecare.com.
+- It covers daycares, preschools, playschools and after-school care for the early years, from a baby's first daycare to primary school.
+- Verification: every centre listed on Kribble is physically visited and checked by the Kribble team before it appears in the app. The visit covers safety, staff credentials, hygiene, ratios and facilities, and the team photographs the space itself (homepage FAQ).
+- Parents will be able to compare centres on location, approach, facilities, fees, timings, availability, real photos and safety details, and see admission, registration, monthly, quarterly, half-yearly and annual plans side by side.
+- Plans parents will be able to book: preschool admissions, monthly and half-day daycare, after-school care, holiday camps and One-Day Daycare (verified childcare booked for a single day).
+- Parents will be able to enquire, enrol, pay fees securely in the app (with receipts and reminders) and get photos, updates and notes from teachers in one feed.
+- Member discounts on enrolment fees, activity packs and monthly plans at partner centres.
+- Free for parents: searching, comparing and shortlisting verified centres is free; parents only pay the centre's own fees (homepage FAQ).
+- On-demand caregivers at home are part of the plan, alongside centres.
+- Coming later: a longitudinal profile of a child's early years combining teacher notes, milestone tracking and AI insights.
+- For centres: a partner programme ("Partner With Us", "Schedule a Demo") to be listed, take enquiries and admissions, collect fees and send updates to parents.
+- Status: pre-launch. Launching in Gurugram first, other cities to follow. Parents join the waitlist at kribblecare.com.
+
+## Key pages
+
+- [Home](https://www.kribblecare.com/): what Kribble is, how verification works, FAQ and the waitlist
+- [Blog](https://www.kribblecare.com/blog/): childcare guides for parents and area guides for Gurugram
+
+## Choosing childcare
+
+- [12 daycare red flags parents should never ignore](https://www.kribblecare.com/blog/daycare-red-flags/): 12 daycare red flags to watch for on a visit and after enrolment, from locked-off rooms to vague pickup rules, and what to do if you spot one.
+- [Daycare and preschool fees explained: admission, monthly, annual and hidden costs](https://www.kribblecare.com/blog/daycare-fees-explained/): Daycare fees explained: admission, registration, deposits, monthly and annual plans, meals, transport and extras, plus questions to ask about refunds.
+- [How to choose a daycare: the complete checklist for Indian parents](https://www.kribblecare.com/blog/how-to-choose-a-daycare/): How to choose a daycare in India: what to check on a visit, from safety, staff and ratios to hygiene, food, fees and a trial day. Printable checklist.
+- [Preschool vs daycare vs playschool: what's the difference and which does your child need?](https://www.kribblecare.com/blog/preschool-vs-daycare/): Preschool vs daycare vs playschool, explained: hours, ages, care vs learning, costs and combined centres, plus a table to match your child's age and work hours.
+- [25 questions to ask on a daycare or preschool visit](https://www.kribblecare.com/blog/questions-to-ask-daycare-visit/): 25 questions to ask a daycare or preschool on your visit, grouped by staff, safety, routine, food, sickness, fees and settling in, with why each one matters.
+- [What is Kribble? Verified childcare, from one day to every day](https://www.kribblecare.com/blog/what-is-kribble/): Kribble is a childcare app starting in Gurgaon that lists only daycares and preschools its team has visited. What it will do, its limits and who runs it.
+
+## Gurgaon guides
+
+- [Daycare in Gurgaon: a parent's complete guide for 2026](https://www.kribblecare.com/blog/daycare-in-gurgaon-guide/): Daycare in Gurgaon explained for parents: how many centres there are, what fees look like by area, chains vs independents, commute planning and what to check.
+- [Preschool and daycare fees in Gurgaon: what parents actually pay](https://www.kribblecare.com/blog/preschool-fees-gurgaon/): Preschool fees in Gurgaon range from about ₹16,000 to ₹2 lakh a year on Kiddenz. See fees by sector, one-time charges, what drives price and how to budget.
+
+## Safety and trust
+
+- [What does a "verified" daycare actually mean?](https://www.kribblecare.com/blog/what-verified-daycare-means/): What a verified daycare means, what a visit can and can't check, why verification is not a licence or a safety guarantee, and what parents should still check.
+- [Daycare safety checklist: 20 things to check before you enrol](https://www.kribblecare.com/blog/daycare-safety-checklist/): A practical daycare safety checklist for Indian parents: 20 things to check on staff, building, pickup, first aid, hygiene and child protection.
+
+## Working parents
+
+- [Your nanny cancelled: backup childcare options for working parents](https://www.kribblecare.com/blog/backup-childcare-one-day/): Nanny cancelled or daycare shut? Backup childcare options for working parents, from family and office creches to one-day daycare, and how to prepare in advance.
+- [Going back to work after maternity leave: a childcare plan that works](https://www.kribblecare.com/blog/childcare-after-maternity-leave/): A practical plan for childcare after maternity leave: when to start looking, daycare vs nanny vs family, settling in, backup care and creche rights.
+
+## Child development
+
+- [Why toddlers can't "just calm down", and what actually helps](https://www.kribblecare.com/blog/toddler-meltdowns-what-helps/): Toddler meltdowns happen because self-control is still developing. Here is what helps in the moment, and what to ask your child's daycare about it.

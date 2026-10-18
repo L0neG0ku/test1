@@ -2,6 +2,7 @@ import { useState } from "react";
 import emailjs from "@emailjs/browser";
 import { ArrowRight, Mail } from "../components/icons";
 import { EMAILJS } from "../lib/emailjs";
+import { trackEvent } from "../lib/analytics";
 
 const EMAIL = "team@kribblecare.com";
 
@@ -37,6 +38,7 @@ function ContactSection({ showEyebrow = true }) {
       .then(() => {
         setStatus("sent");
         setForm({ name: "", email: "", message: "" });
+        trackEvent("contact_submit");
       })
       .catch((err) => {
         console.error(err);

@@ -1,15 +1,22 @@
-import { useState } from "react";
+import { useSyncExternalStore } from "react";
 import { Link, useLocation } from "react-router-dom";
 import blobImg from "../assets/parent.jpeg";
 import circleImg from "../assets/daycare.jpeg";
 import { ArrowRight, Check } from "../components/icons";
 import { hasDoneSurvey } from "../lib/surveyStatus";
 
+const noSubscribe = () => () => {};
+
 function Hero() {
   const location = useLocation();
-  const justDone = Boolean(location.state?.surveyJustDone);
-  // Read once on mount; the flag only ever changes on the survey page.
-  const [surveyDone] = useState(() => justDone || hasDoneSurvey());
+
+  // False in the prerendered HTML and during hydration (so the first client
+  // render matches it), true straight after. Browser-only state such as the
+  // survey flag is read only once this is true. On in-app navigation it's
+  // true from the first render, so the buttons never flash.
+  const inBrowser = useSyncExternalStore(noSubscribe, () => true, () => false);
+  const justDone = inBrowser && Boolean(location.state?.surveyJustDone);
+  const surveyDone = inBrowser && (justDone || hasDoneSurvey());
 
   return (
     <section className="k-hero">
@@ -22,7 +29,7 @@ function Hero() {
           </h1>
 
           <p className="k-lead">
-          Discover trusted, verified childcare centres and book with confidence.
+          Discover trusted, verified childcare centres in Gurugram and book with confidence.
           Stay connected with updates and access your child growth analytics in one App
           </p>
 
@@ -61,8 +68,7 @@ function Hero() {
               <span />
             </div>
             <p>
-              <b>Trusted by every parent</b> verified centres, real
-              information.
+              <b>Verified centres,</b> real information.
             </p>
           </div>
         </div>

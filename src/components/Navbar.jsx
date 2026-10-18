@@ -39,6 +39,11 @@ function Navbar() {
               {l.label}
             </NavLink>
           ))}
+          {/* The blog is static HTML outside the React app, so a plain link
+              (a router link would try to render it in-app and hit the 404). */}
+          <a href="/blog/" className="k-nav__link" onClick={close}>
+            Blog
+          </a>
 
           {/* CTAs live inside the drawer on mobile */}
           <a

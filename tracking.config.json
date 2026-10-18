@@ -1,0 +1,6 @@
+{
+  "_comment": "Tracking IDs. Leave a value empty to keep that tool switched off. These IDs are public by design (they ship in every page). After filling one in, commit and push; Vercel redeploys with it on.",
+  "ga4MeasurementId": "G-0MV5PFB7LN",
+  "metaPixelId": "",
+  "gtmContainerId": "GTM-MSQZRLPV"
+}

@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import ScrollToTop from "./components/ScrollToTop";
 
@@ -19,13 +19,19 @@ import {
   FaqPage,
 } from "./pages/ChapterPages";
 import { PrivacyPage, TermsPage } from "./pages/LegalPages";
+import NotFoundPage from "./pages/NotFoundPage";
+import usePageMeta from "./seo/usePageMeta";
 
 import "./styles/kribble.css";
 import "./App.css";
 
+/* The router itself is supplied by the caller: BrowserRouter in main.jsx,
+   StaticRouter in entry-server.jsx when pages are prerendered at build time. */
 function App() {
+  usePageMeta();
+
   return (
-    <BrowserRouter>
+    <>
       <ScrollToTop />
       <Navbar />
 
@@ -51,9 +57,9 @@ function App() {
         <Route path="/privacy" element={<PrivacyPage />} />
         <Route path="/terms" element={<TermsPage />} />
 
-        <Route path="*" element={<HomePage />} />
+        <Route path="*" element={<NotFoundPage />} />
       </Routes>
-    </BrowserRouter>
+    </>
   );
 }
 

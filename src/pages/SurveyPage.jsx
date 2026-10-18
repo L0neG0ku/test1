@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import emailjs from "@emailjs/browser";
 import { markSurveyDone } from "../lib/surveyStatus";
 import { EMAILJS } from "../lib/emailjs";
+import { trackEvent } from "../lib/analytics";
 
 const ROLE_LINES = {
   Parent:
@@ -112,6 +113,7 @@ function SurveyPage() {
       .send(EMAILJS.service, EMAILJS.teamTemplate, templateParams, EMAILJS.publicKey)
       .then(() => {
         markSurveyDone();
+        trackEvent("survey_complete");
         sendThankYou({ name, email, userType });
         sendWhatsApp({ name, phone });
 

@@ -1,5 +1,5 @@
-import showcaseImg from "../assets/childcare.png";
-import appShot from "../assets/peak.png";
+import showcaseImg from "../assets/childcare.webp";
+import appShot from "../assets/peak.webp";
 import { ShieldCheck, Grid, Wallet } from "../components/icons";
 
 const CARDS = [

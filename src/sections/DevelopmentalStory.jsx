@@ -68,7 +68,9 @@ function DevelopmentalStory({ showEyebrow = true }) {
             <div className="k-report" aria-hidden="true">
               <div className="k-report__head">
                 <div>
-                  <p className="k-report__who">Aanya · 3y 4m</p>
+                  <p className="k-report__who">
+                    Aanya · 3y 4m <span className="k-report__example">Example</span>
+                  </p>
                   <h3>Developmental Journey</h3>
                 </div>
                 <span className="k-report__spark">

@@ -1,5 +1,6 @@
 User-agent: *
-
 Allow: /
+Disallow: /api/
 
-Sitemap: https://kribblecare.com/sitemap.xml
+Sitemap: https://www.kribblecare.com/sitemap.xml
+Sitemap: https://www.kribblecare.com/sitemap-blog.xml

@@ -1,0 +1,37 @@
+{
+  "site_url": "https://www.kribblecare.com",
+  "blog_path": "/blog/",
+  "lang": "en-IN",
+  "product_name": "Kribble",
+  "company": "Little Orbit Technology Private Limited",
+  "author_name": "The Kribble team",
+  "tagline": "Childcare, wherever you need it. Verified daycares and preschools, starting in Gurugram.",
+  "theme_color": "#7753FF",
+  "twitter_handle": "",
+  "launch_date": "2026-10-14",
+  "cta_url": "https://www.kribblecare.com/waitlist",
+  "cta_label": "Join the waitlist",
+  "cta_heading": "Find verified childcare in Gurugram.",
+  "cta_body": "Kribble's team visits and checks every daycare and preschool before it is listed. Compare fees and plans side by side, book a single day or a full year, and get updates from your child's centre in one app. Starting in Gurugram, other cities next.",
+  "blog_title": "Childcare guides for Indian parents: daycare, preschool and Gurugram | Kribble",
+  "blog_description": "Practical guides to choosing a daycare or preschool in India: checklists, fees, safety, settling in, and area-by-area guides to childcare in Gurugram.",
+  "blog_h1": "Choosing childcare, made simpler",
+  "blog_intro": "Plain, practical guides for parents choosing a daycare, preschool or playschool, with honest checklists, fee explainers and area guides for Gurugram. Written by the team building Kribble.",
+  "llms_summary": "Kribble is a childcare discovery and booking app for parents in India, launching first in Gurugram (Gurgaon). Its team physically visits and checks every daycare, preschool and playschool before listing it. Parents will be able to compare fees, plans and facilities, book anything from a single day (One-Day Daycare) to a full year, pay in the app and get daily updates from the centre. Kribble is pre-launch; parents can join the waitlist at kribblecare.com.",
+  "category_order": [
+    "Choosing childcare",
+    "Gurgaon guides",
+    "Safety and trust",
+    "Working parents",
+    "Child development",
+    "For centres"
+  ],
+  "category_descriptions": {
+    "Choosing childcare": "How to choose a daycare, preschool or playschool: checklists, questions to ask, fees, ratios and teaching approaches.",
+    "Gurgaon guides": "Area-by-area guides to daycares and preschools in Gurugram, with typical fees and what to look for.",
+    "Safety and trust": "What makes a childcare centre safe: verification, CCTV, staff checks, hygiene and daily communication.",
+    "Working parents": "Childcare for working parents: returning to work, backup care, sharing pickups and settling in.",
+    "Child development": "Early-years development, explained simply: behaviour, screen time and what good early learning looks like.",
+    "For centres": "For daycare and preschool owners: admissions, parent communication and running a centre."
+  }
+}

@@ -1,4 +1,4 @@
-import piyushImg from "../assets/piyush.jpg";
+import piyushImg from "../assets/piyush.webp";
 import ketanImg from "../assets/ketan.jpg";
 import anandImg from "../assets/anand.jpg";
 

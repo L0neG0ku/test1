@@ -1,5 +1,9 @@
 {
-  "rewrites": [
-    { "source": "/((?!api/).*)", "destination": "/index.html" }
+  "cleanUrls": true,
+  "redirects": [
+    { "source": "/blog", "destination": "/blog/", "permanent": true },
+    { "source": "/blog/:slug([a-z0-9-]+)", "destination": "/blog/:slug/", "permanent": true },
+    { "source": "/blog/category/:cat([a-z0-9-]+)", "destination": "/blog/category/:cat/", "permanent": true },
+    { "source": "/:page((?!blog$)[a-z-]+)/", "destination": "/:page", "permanent": true }
   ]
 }

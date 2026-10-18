@@ -49,6 +49,13 @@ function ChapterProblem({ showEyebrow = true }) {
             </article>
           ))}
         </div>
+
+        {/* Points readers (and search engines) at the blog's pillar guides. */}
+        <p className="k-guide-links" data-reveal>
+          Choosing a daycare right now? Read our{" "}
+          <a href="/blog/how-to-choose-a-daycare/">guide to choosing a daycare</a>{" "}
+          or the <a href="/blog/daycare-in-gurgaon-guide/">daycare guide for Gurgaon</a>.
+        </p>
       </div>
     </section>
   );

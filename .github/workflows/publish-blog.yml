@@ -1,0 +1,49 @@
+# Releases scheduled blog posts. Each post has a publish date (seo-blog/site.json
+# launch_date + the post's `day:`). Every morning this rebuilds the blog; when a
+# post's date has arrived the output changes, it commits public/, and Vercel
+# deploys the push. On days with nothing new it changes nothing and commits nothing.
+
+name: Publish scheduled blog posts
+
+on:
+  schedule:
+    # 02:30 UTC = 08:00 IST. Running after midnight UTC keeps the runner's date
+    # equal to the date in India, so posts go live on their intended day.
+    - cron: "30 2 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publish-blog
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Build blog
+        run: node scripts/build-blog.mjs
+
+      - name: Commit newly published posts
+        run: |
+          if git diff --quiet && [ -z "$(git ls-files --others --exclude-standard public)" ]; then
+            echo "No new posts today."
+            exit 0
+          fi
+          git config user.name "kribble-blog-bot"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add public
+          git commit -m "Publish scheduled blog posts ($(date -u +%Y-%m-%d))"
+          git push

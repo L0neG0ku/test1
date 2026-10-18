@@ -22,3 +22,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Blog builder output (copied into public/ by scripts/build-blog.mjs)
+seo-blog/dist/
