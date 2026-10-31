@@ -5,6 +5,318 @@ Kribble is a childcare discovery and booking app for parents in India, launching
 
 ---
 
+# How to compare daycares side by side: a simple scorecard
+URL: https://www.kribblecare.com/blog/compare-daycares-scorecard/
+
+The easiest way to compare daycares is to score every centre on the same short list, straight after each visit. Give each item a score from 1 to 5, multiply by how much it matters to your family, and add it up. The total won't decide for you, but it shows you clearly where each centre is strong and weak.
+
+## Why a scorecard helps
+
+After three or four visits, centres start to blur. Memory tends to favour whichever you saw last.
+
+A scorecard fixes that. You judge every centre on the same things, in the same way. It also gives two parents shared words to talk it through.
+
+If you haven't visited yet, start with our [complete checklist for choosing a daycare](/blog/how-to-choose-a-daycare/). It explains what to look for under each heading below.
+
+## The scorecard you can copy
+
+Copy this table into a notes app or spreadsheet. Fill one column per centre.
+
+| What you're scoring | Weight (1 to 3) | Centre A (1 to 5) | Centre B (1 to 5) | Centre C (1 to 5) |
+|---|---|---|---|---|
+| Safety: gates, pickup rules, first aid, clean floors | 3 | | | |
+| Staff: warmth, how they talk to children, turnover | 3 | | | |
+| Ratio: adults per child in your child's room | 3 | | | |
+| Hygiene: toilets, nappy area, kitchen, handwashing | 2 | | | |
+| Daily routine: play, rest, outdoor time | 2 | | | |
+| Food: menu, who cooks, allergies handled | 2 | | | |
+| Communication: updates, how they share incidents | 2 | | | |
+| Location and timings: commute, hours, late pickup | 2 | | | |
+| Fees: total yearly cost, refund terms | 2 | | | |
+| Gut feel: would your child be happy here? | 3 | | | |
+
+To get a total, multiply each score by its weight, then add the column. With these weights the maximum is 120.
+
+## How to score each item
+
+Use the same scale every time:
+
+- **5:** clearly good, with something you saw for yourself
+- **4:** good, but you only heard it, didn't see it
+- **3:** fine, nothing stood out
+- **2:** a concern you'd need fixed before enrolling
+- **1:** a dealbreaker
+
+The gap between 5 and 4 matters. A centre that *says* it has a pickup authorisation form is not the same as one that showed you. Score what you saw.
+
+For ratio, count the adults and children in the room yourself. Our guide to [teacher-to-child ratios](/blog/teacher-child-ratio-guide/) explains what to look for at each age.
+
+For fees, work out the full first-year cost, not just the monthly figure. Admission, deposits, meals and transport add up. Our [daycare fees explainer](/blog/daycare-fees-explained/) lists every component to ask about.
+
+## Setting your own weights
+
+The weights in the table are a starting point. Change them to suit your family. A few examples:
+
+- If your child has a food allergy, raise food to 3.
+- If you both work long hours, raise location and timings to 3.
+- If budget is tight, raise fees to 3. Be honest about it.
+
+Keep safety, staff and ratio at 3. They shape your child's day most and are hardest to fix later.
+
+Agree on weights *before* you visit, so you can't tilt them towards a favourite.
+
+## Dealbreakers come first
+
+Some things should rule a centre out, whatever its total. Decide these in advance. Common ones:
+
+- Staff couldn't tell you who is allowed to collect your child
+- You weren't allowed to see the rooms your child would use
+- Toilets or the nappy area were dirty during the day
+- Fees or refund terms were vague and wouldn't be put in writing
+
+Any score of 1 on a weight-3 item usually means no. Our list of [daycare red flags](/blog/daycare-red-flags/) covers more warning signs.
+
+## How to break a tie
+
+Two centres often end up within a few points of each other. That's normal. Here's how to decide.
+
+1. **Compare the weight-3 rows only.** If one centre wins on safety, staff and ratio, choose it, even if the other has better facilities.
+2. **Look at the gaps.** A centre with all 4s is often a safer bet than one with some 5s and a 2.
+3. **Go back at a different time.** Visit at pickup time or late morning. A busy hour shows you more than a calm tour.
+4. **Try a day.** Nothing beats seeing your child there. Read why a [trial day before you enrol](/blog/trial-day-before-enrolling/) is worth it.
+5. **Ask your child.** Even toddlers show you something. Do they want to go back to the toy shelf, or cling to you?
+
+Still tied? Pick the one closer to home.
+
+## Making it work in practice
+
+- Fill in the scorecard straight after each visit, while it's fresh.
+- Add one line of notes per row. "Teacher knelt to talk to a crying child" is more useful later than a number.
+- Ask the same [questions on every visit](/blog/questions-to-ask-daycare-visit/), so your answers line up.
+
+When Kribble launches, you'll be able to see centres' facilities, timings and fee plans side by side. That makes the first shortlist quicker. The scorecard is still worth filling in yourself after each visit.
+
+## Frequently asked questions
+
+### How many daycares should I compare?
+
+Three is a good number. It gives you a sense of what's normal without becoming overwhelming. If none of the three feels right, visit two more rather than settling.
+
+### Should both parents score separately?
+
+Yes, if you can. Score on your own, then compare. Where your scores differ, talk about what each of you saw. Those conversations are often where the real decision gets made.
+
+### What if the cheapest centre scores highest?
+
+Then it may simply be the right one. Price and quality don't always move together. Check that the low fee isn't hiding extra charges, and confirm the ratio and staffing on a second visit.
+
+
+---
+
+# Daycares and preschools in Sectors 45 to 51 and South City, Gurgaon
+URL: https://www.kribblecare.com/blog/daycare-sector-45-51-gurgaon/
+
+Sectors 45 to 51 are among the densest clusters of daycares and preschools in Gurgaon. Kiddenz lists close to 30 centres per sector. If you live in Sector 50 or nearby, you'll have plenty of choice within a short drive. The challenge is comparing them fairly, because so many look similar from the outside.
+
+## How many centres are there?
+
+Here's what [Kiddenz](https://kiddenz.com/gurugram) lists for this cluster:
+
+| Sector | Centres listed (Kiddenz) | Median annual fee (Kiddenz) |
+|---|---|---|
+| [Sector 51](https://kiddenz.com/gurugram/sector-51) | about 30 | about ₹1.1 lakh |
+| Sector 50 | about 29 | not listed here |
+| Sector 46 | about 28 | not listed here |
+| Sector 45 | about 27 | not listed here |
+
+That's well over 100 centres listed across four sectors. Directories don't catch every centre, so the real number may be higher.
+
+For comparison, the median across all of Gurgaon on Kiddenz is about ₹55,400 a year. Sector 51's median is roughly double that.
+
+## What fees look like here
+
+Sector 51's median of about ₹1.1 lakh a year puts it towards the upper end of the city. Kiddenz's citywide range runs from about ₹16,000 to ₹2 lakh, so you'll still find centres well above and below the median.
+
+A budget example nearby: a franchise preschool in Sector 41, listed on SchoolsUniverse, charges about ₹35,000 a year with about ₹5,000 for admission. It shows how much fees can vary within a few kilometres.
+
+Fees differ for many reasons: hours, meals, ratio, space and rent. Our guide to [preschool and daycare fees in Gurgaon](/blog/preschool-fees-gurgaon/) explains what drives the price and how to work out the full first-year cost.
+
+## Lots of choice: how to narrow it down
+
+With 25 to 30 centres per sector, you can't visit them all. Here's a way to get from a long list to a short one.
+
+1. **Set your radius.** Decide the furthest you'll drive twice a day. For many families, that's their own sector and the next one or two.
+2. **Filter by hours.** Cross off centres whose timings don't fit your workday, including late pickup.
+3. **Filter by type.** Do you need full-day daycare, a morning preschool, or both? See [preschool vs daycare](/blog/preschool-vs-daycare/).
+4. **Filter by budget.** Ask for the full first-year cost before you visit, not after.
+5. **Visit three or four.** Go at a busy time of day.
+
+Then compare them on the same terms with our [side-by-side scorecard](/blog/compare-daycares-scorecard/).
+
+## What to check on a visit
+
+Use our [complete checklist for choosing a daycare](/blog/how-to-choose-a-daycare/) everywhere. In this cluster, a few points deserve extra care.
+
+### Centres in houses and builder floors
+
+You're likely to see centres in converted homes alongside purpose-fitted buildings. Both can work well. In a house, ask:
+
+- Are stairs gated and balconies and terraces locked?
+- Where is the second exit?
+- Is the outdoor play area fully enclosed and shaded?
+- Are the toilets child-sized and close to the play rooms?
+
+### Drop-off on residential roads
+
+Inner sector roads can get busy at drop-off time, with cars and vans stopping at several centres on one street.
+
+- Is there a safe place to stop, away from moving traffic?
+- Does a staff member receive children at the gate?
+- If the centre offers transport, who drives and is there an attendant?
+
+### Telling similar centres apart
+
+When many centres offer similar facilities, look at the people and the routine.
+
+- How do teachers speak to a child who's upset? Do they kneel and listen?
+- How long have the lead teachers worked here?
+- What does a normal day look like, hour by hour?
+- How are incidents reported to parents? A good answer: "We call you for anything beyond a minor bump, and write every incident in a log you can see."
+
+Use the same [questions on every visit](/blog/questions-to-ask-daycare-visit/) so your notes line up.
+
+## South City
+
+South City sits next to this cluster, and many families here look across both. The same approach works: set your radius, filter by hours and budget, and visit at a busy time. Don't rule out a centre just because it's across a sector boundary. Distance on the road matters more than the sector number.
+
+For the wider picture, read our [guide to daycare in Gurgaon](/blog/daycare-in-gurgaon-guide/).
+
+When Kribble launches in Gurugram, you'll be able to compare centres here by location, approach, timings and fees. Every listed centre will have been visited by the Kribble team first.
+
+## Frequently asked questions
+
+### How many daycares are there in Sector 50, Gurgaon?
+
+Kiddenz lists about 29 centres in Sector 50. Nearby Sector 51 has about 30, Sector 46 about 28 and Sector 45 about 27. Directories don't list every centre, so there may be more.
+
+### What is the average daycare fee in Sector 51?
+
+Kiddenz shows a median of about ₹1.1 lakh a year for Sector 51. That's roughly double the citywide median of about ₹55,400. Individual centres will sit above and below it, so ask each for the full first-year cost.
+
+### With so many options, how many should I visit?
+
+Three or four is usually enough. Filter first by distance, hours and budget, then visit at a busy time of day. Score each one on the same list straight after the visit.
+
+### Is a more expensive centre better?
+
+Not necessarily. A higher fee may pay for longer hours, meals or more space, or it may reflect rent. Judge the staff, ratio, safety and routine you see on the visit.
+
+
+---
+
+# Creche at work in India: what the law says and how to ask your employer
+URL: https://www.kribblecare.com/blog/creche-at-work-india/
+
+In India, every establishment with 50 or more employees must provide a creche facility. The rule came in with the Maternity Benefit (Amendment) Act, 2017, and since November 2025 it sits within the Code on Social Security, 2020. The creche can be the employer's own or a shared one nearby.
+
+Many parents don't know this rule exists, or aren't sure how to raise it. Here's what the law says and how to ask.
+
+## What the 2017 amendment said
+
+The [Maternity Benefit (Amendment) Act, 2017](https://www.labour.gov.in/static/uploads/2025/06/1a64517bcba2fab5650a9ff66d429080.pdf) added a new section 11A to the 1961 Act. In plain words:
+
+- **Who:** every establishment with fifty or more employees.
+- **What:** a creche facility, within a distance set by the rules.
+- **How:** either a separate creche, or along with common facilities.
+- **Visits:** the employer must allow the mother four visits a day to the creche, including her rest interval.
+- **Telling employees:** every establishment must inform each woman, in writing and by email or other electronic means, of every benefit under the Act when she is first appointed.
+
+The Labour Ministry's [clarification](https://labour.gov.in/sites/default/files/the_maternity_benefit_amendment_act2017_-clarifications.pdf) noted that the creche provision took effect from 1 July 2017.
+
+The same amendment raised paid maternity leave to up to 26 weeks for the first two children. It also allowed work from home after leave, where the job allows and both sides agree.
+
+## What changed in 2025
+
+On 21 November 2025, the government [brought four labour codes into force](https://labour.gov.in/sites/default/files/pib2192463.pdf), rationalising 29 older central labour laws. Maternity benefits, including the creche rule, are now covered by the Code on Social Security, 2020.
+
+According to the government's [factsheet on the Code](https://www.pib.gov.in/FactsheetDetails.aspx?id=150473):
+
+- The creche rule still applies to establishments with 50 or more employees.
+- It is described as gender-neutral, and covers all types of establishments.
+- Employers can use a common creche. It can be run by government, a municipality, a private provider, an NGO, or a group of establishments pooling resources.
+- The four daily visits for the mother continue.
+- The factsheet also mentions a creche allowance where no creche is provided.
+
+Detailed rules, such as the exact distance and when an allowance can replace a creche, are set separately and can change. Check the current rules for your state, or ask HR, before relying on a specific detail.
+
+## How it works in practice
+
+Employers meet the rule in a few different ways.
+
+| Set-up | What it looks like | Good to check |
+|---|---|---|
+| On-site creche | A room or floor inside the office | Ratios, hygiene, who runs it |
+| Tie-up with a nearby daycare | Reserved seats at a centre close to the office | Distance, timings, how many seats |
+| Shared creche in a business park | One creche serving several companies | Waiting lists, age limits |
+| Allowance | Money towards childcare, where the rules allow | How much, and whether it covers your real cost |
+
+An on-site creche is easiest for feeding visits. A tie-up may have better facilities but needs a short trip. The same checks apply as for any daycare. Use our guide on [how to choose a daycare](/blog/how-to-choose-a-daycare/) and the [daycare safety checklist](/blog/daycare-safety-checklist/).
+
+## Near the office or near home?
+
+An office creche makes feeding visits possible and keeps your child close. But it means your child commutes with you every day. On days you work from home or travel, it may not help at all.
+
+Our guide to daycare near home or office walks through the trade-offs.
+
+## How to ask your employer
+
+Keep it friendly.
+
+1. **Check the policy first.** Look in your offer letter, HR portal or handbook for "creche" or "childcare".
+2. **Ask HR in writing.** A short email works well.
+3. **Ask practical questions.** Where is the creche? What ages does it take? What are the timings? Is there a waitlist? Who runs it?
+4. **Ask early.** Raise it during pregnancy or early in your leave, not the week before you return.
+5. **Bring colleagues in.** If several parents need it, a joint request is easier to act on.
+
+A simple email could say:
+
+> "I'm returning from maternity leave in March and would like to understand our creche facility. Could you share where it is, the age range, timings and how to register? Thank you."
+
+Fathers can ask too. The government describes the requirement as gender-neutral, and HR can tell you who is eligible to use it.
+
+## If your employer has no creche yet
+
+Employers with fewer than 50 employees generally aren't covered by this rule. Some larger ones may still be setting things up. You'll need your own plan.
+
+- Look at daycares near home and near the office, then compare commutes.
+- Ask about flexible hours or work from home for the first months.
+- Line up a backup for sick days and closures. See [backup childcare options](/blog/backup-childcare-one-day/).
+
+Our guide to [childcare after maternity leave](/blog/childcare-after-maternity-leave/) has a full timeline.
+
+When Kribble launches in Gurugram, you'll be able to compare verified daycares near your home or office by fees, timings and availability.
+
+## Frequently asked questions
+
+### Which employers must provide a creche in India?
+
+Establishments with 50 or more employees must provide a creche facility. The rule came in through the Maternity Benefit (Amendment) Act, 2017 and now sits within the Code on Social Security, 2020.
+
+### Can the creche be outside the office?
+
+Yes. The law allows a separate creche or a shared one. Employers can use a common creche, run by government, a municipality, a private provider, an NGO or a group of employers.
+
+### How many creche visits can a mother make during work?
+
+The law allows four visits a day to the creche, which include her normal rest interval. Ask HR how this works with your hours and team.
+
+### Is the Maternity Benefit Act still in force?
+
+Since 21 November 2025, its provisions have been brought into the Code on Social Security, 2020, as part of India's four labour codes. The creche and maternity leave rights continue under the Code.
+
+
+---
+
 # Montessori, play-way, Reggio Emilia or traditional: preschool approaches explained
 URL: https://www.kribblecare.com/blog/montessori-vs-playway-vs-reggio/
 
@@ -156,7 +468,7 @@ Each has trade-offs. Our guide to daycare near home or near office helps you wei
 
 We don't have a published median for Golf Course Extension or Sohna Road specifically. Across Gurgaon (officially Gurugram), [Kiddenz's listings](https://kiddenz.com/gurugram) show a median of about ₹55,400 a year, ranging from roughly ₹16,000 to ₹2 lakh.
 
-For a local reference point, Kiddenz shows a median of about ₹1.1 lakh a year in [Sector 51](https://kiddenz.com/gurugram/sector-51). Our guide to Sectors 45 to 51 and South City covers that cluster in detail.
+For a local reference point, Kiddenz shows a median of about ₹1.1 lakh a year in [Sector 51](https://kiddenz.com/gurugram/sector-51). Our guide to [Sectors 45 to 51 and South City](/blog/daycare-sector-45-51-gurgaon/) covers that cluster in detail.
 
 Society daycares and main-road centres can price very differently. Ask every centre for the full first-year cost in writing. Our guide to [preschool and daycare fees in Gurgaon](/blog/preschool-fees-gurgaon/) explains what to add up.
 
@@ -654,7 +966,7 @@ If one parent does both trips and works on a fixed schedule, near the office can
 
 ### Do offices near Golf Course Road have creches?
 
-Some employers run or partner with creches, but it varies by company. Ask your HR team what's available, the age range and how long the waitlist is. Our guide to creche at work in India has more.
+Some employers run or partner with creches, but it varies by company. Ask your HR team what's available, the age range and how long the waitlist is. Our guide to [creche at work in India](/blog/creche-at-work-india/) has more.
 
 
 ---
@@ -1024,7 +1336,7 @@ If anything worries you, compare it with our list of [daycare red flags](/blog/d
 
 ## After the trial
 
-Write down your impressions that evening. Add them to your notes from the visit. If you have tried more than one centre, a simple comparison scorecard helps you weigh them up.
+Write down your impressions that evening. Add them to your notes from the visit. If you have tried more than one centre, a simple [comparison scorecard](/blog/compare-daycares-scorecard/) helps you weigh them up.
 
 Remember that one day is a snapshot. A child who struggled may settle well with a gradual start. A child who loved it may still need a few weeks to adjust. Use the trial alongside everything else in our [complete guide to choosing a daycare](/blog/how-to-choose-a-daycare/).
 
@@ -1112,7 +1424,7 @@ Simple ways to raise it:
 
 - Block pickup time in your calendar, like any other meeting.
 - Ask about flexible hours or work from home on fixed days.
-- Ask HR whether your office has a creche or a tie-up. The government describes India's [creche requirement](https://www.pib.gov.in/FactsheetDetails.aspx?id=150473) for establishments with 50 or more employees as gender-neutral. Our guide to creches at work in India explains the rules.
+- Ask HR whether your office has a creche or a tie-up. The government describes India's [creche requirement](https://www.pib.gov.in/FactsheetDetails.aspx?id=150473) for establishments with 50 or more employees as gender-neutral. Our guide to [creches at work in India](/blog/creche-at-work-india/) explains the rules.
 
 ## When the daycare still calls mum
 
@@ -1475,7 +1787,7 @@ To compare properly:
 2. Add every one-time and recurring charge to get a first-year total.
 3. Note what is included: meals, hours, holidays, materials.
 4. Compare refund and notice terms, not just prices.
-5. Put it all in one table. Our daycare comparison scorecard gives you a template.
+5. Put it all in one table. Our [daycare comparison scorecard](/blog/compare-daycares-scorecard/) gives you a template.
 
 Fees are one part of the decision. Our [complete daycare checklist](/blog/how-to-choose-a-daycare/) covers the rest, from safety to staff.
 
@@ -1629,7 +1941,7 @@ If you rely on another parent, offer to return the favour. Shared backups last l
 
 ## Option 2: Your office creche
 
-If you work for a larger employer, you may have access to a creche or a tie-up with a nearby centre. In India, establishments with 50 or more employees are [required to provide one](https://www.pib.gov.in/FactsheetDetails.aspx?id=150473), either their own or a shared creche. Our guide to creches at work in India explains the rules and how to ask HR.
+If you work for a larger employer, you may have access to a creche or a tie-up with a nearby centre. In India, establishments with 50 or more employees are [required to provide one](https://www.pib.gov.in/FactsheetDetails.aspx?id=150473), either their own or a shared creche. Our guide to [creches at work in India](/blog/creche-at-work-india/) explains the rules and how to ask HR.
 
 Register early, even if you only plan to use it as backup. Check age limits, timings and how much notice they need.
 
@@ -1927,7 +2239,7 @@ Watch how staff greet your child, how they handle tears and what your child says
 
 ## Step 7: Compare, then trust your gut
 
-After your visits, compare centres on the same criteria. A simple scoring table helps you see past the nicest reception area. Try our side-by-side daycare scorecard.
+After your visits, compare centres on the same criteria. A simple scoring table helps you see past the nicest reception area. Try our [side-by-side daycare scorecard](/blog/compare-daycares-scorecard/).
 
 Then listen to your instinct. If something felt off and you can't name it, that still counts. If you live in Gurgaon, our [Gurgaon daycare guide](/blog/daycare-in-gurgaon-guide/) covers areas, fee bands and commute planning.
 
@@ -2324,7 +2636,7 @@ Newer high-rise societies, many with daycares inside or next to the complex. Rea
 
 ### Sectors 45 to 51 and South City
 
-One of the densest clusters in the city, with close to 30 centres per sector on Kiddenz. Read our guide to daycare in Sectors 45 to 51.
+One of the densest clusters in the city, with close to 30 centres per sector on Kiddenz. Read our guide to [daycare in Sectors 45 to 51](/blog/daycare-sector-45-51-gurgaon/).
 
 ### Dwarka Expressway and New Gurgaon
 
@@ -2398,7 +2710,7 @@ A good answer is specific: "In summer, outdoor time moves to before 9 am. When t
 
 Neither, on its own. A chain gives you predictable policies. An independent may give you a closer relationship with the owner.
 
-What matters is the room your child will be in, the adults in it, and how the centre runs day to day. Judge the branch, not the brand. Use the same [questions on every visit](/blog/questions-to-ask-daycare-visit/) and a simple scorecard to compare fairly.
+What matters is the room your child will be in, the adults in it, and how the centre runs day to day. Judge the branch, not the brand. Use the same [questions on every visit](/blog/questions-to-ask-daycare-visit/) and a [simple scorecard](/blog/compare-daycares-scorecard/) to compare fairly.
 
 ## A simple plan for Gurgaon parents
 
@@ -2462,7 +2774,7 @@ Location is one of the biggest drivers of price. Kiddenz's sector pages show the
 | Citywide median | about ₹55,400 |
 | Sector 92 | about ₹32,400 |
 
-A family in Sector 51 might see a typical fee more than three times higher than a family in Sector 92. Our area guides go into more detail, starting with Sectors 45 to 51 and Dwarka Expressway and New Gurgaon.
+A family in Sector 51 might see a typical fee more than three times higher than a family in Sector 92. Our area guides go into more detail, starting with [Sectors 45 to 51](/blog/daycare-sector-45-51-gurgaon/) and Dwarka Expressway and New Gurgaon.
 
 ## Premium and budget examples
 
@@ -2522,7 +2834,7 @@ Remember the second year too. Ask whether fees rise each year and by how much. A
 
 It's easy to let price lead. Try to keep it as one factor among several. Safety, staff, ratio and your child's happiness matter more over a full year.
 
-Our [complete checklist for choosing a daycare](/blog/how-to-choose-a-daycare/) and the side-by-side scorecard help you weigh fees against everything else. For more on the local picture, see our [guide to daycare in Gurgaon](/blog/daycare-in-gurgaon-guide/).
+Our [complete checklist for choosing a daycare](/blog/how-to-choose-a-daycare/) and the [side-by-side scorecard](/blog/compare-daycares-scorecard/) help you weigh fees against everything else. For more on the local picture, see our [guide to daycare in Gurgaon](/blog/daycare-in-gurgaon-guide/).
 
 When Kribble launches, you'll be able to see admission, registration, monthly, quarterly, half-yearly and annual plans side by side for each listed centre.
 
@@ -2642,7 +2954,7 @@ Going back is a big shift for the whole family. A clear plan makes it far less s
 
 Your timeline starts with your leave. Under India's [Maternity Benefit (Amendment) Act, 2017](https://www.labour.gov.in/static/uploads/2025/06/1a64517bcba2fab5650a9ff66d429080.pdf), eligible women get up to 26 weeks of paid maternity leave for their first two children. It added a creche requirement for establishments with 50 or more employees. It also let employers allow work from home after leave, by mutual agreement.
 
-Since 21 November 2025, these provisions sit within the [Code on Social Security, 2020](https://www.pib.gov.in/FactsheetDetails.aspx?id=150473). It keeps the creche rule for establishments with 50 or more employees. Check with HR how your employer applies it. Our guide to creches at work in India explains how to ask.
+Since 21 November 2025, these provisions sit within the [Code on Social Security, 2020](https://www.pib.gov.in/FactsheetDetails.aspx?id=150473). It keeps the creche rule for establishments with 50 or more employees. Check with HR how your employer applies it. Our guide to [creches at work in India](/blog/creche-at-work-india/) explains how to ask.
 
 ## A timeline that works
 
