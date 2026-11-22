@@ -17,9 +17,119 @@
       "permanent": true
     },
     {
-      "source": "/:page(problem|solution|how-it-works|why-parents|what-we-cover|team|why-kribble|developmental-story|faq|about|contact|survey|waitlist|privacy|terms)/",
+      "source": "/problem",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/problem/",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/solution",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/solution/",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/why-kribble",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/why-kribble/",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/why-parents",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/why-parents/",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/developmental-story",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/developmental-story/",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/how-it-works",
+      "destination": "/#how-it-works",
+      "permanent": true
+    },
+    {
+      "source": "/how-it-works/",
+      "destination": "/#how-it-works",
+      "permanent": true
+    },
+    {
+      "source": "/what-we-cover",
+      "destination": "/#activities",
+      "permanent": true
+    },
+    {
+      "source": "/what-we-cover/",
+      "destination": "/#activities",
+      "permanent": true
+    },
+    {
+      "source": "/faq",
+      "destination": "/#faq",
+      "permanent": true
+    },
+    {
+      "source": "/faq/",
+      "destination": "/#faq",
+      "permanent": true
+    },
+    {
+      "source": "/team",
+      "destination": "/about",
+      "permanent": true
+    },
+    {
+      "source": "/team/",
+      "destination": "/about",
+      "permanent": true
+    },
+    {
+      "source": "/:page(explore|about|contact|survey|waitlist|privacy|terms)/",
       "destination": "/:page",
       "permanent": true
+    }
+  ],
+  "headers": [
+    {
+      "source": "/assets/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/blog/og/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=604800"
+        }
+      ]
     }
   ]
 }

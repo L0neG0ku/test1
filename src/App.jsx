@@ -7,17 +7,7 @@ import SurveyPage from "./pages/SurveyPage";
 import WaitlistPage from "./pages/WaitlistPage";
 import AboutPage from "./pages/AboutPage";
 import ContactPage from "./pages/ContactPage";
-import {
-  ProblemPage,
-  SolutionPage,
-  HowItWorksPage,
-  WhyParentsPage,
-  WhatWeCoverPage,
-  TeamPage,
-  WhyKribblePage,
-  DevelopmentalStoryPage,
-  FaqPage,
-} from "./pages/ChapterPages";
+import ExplorePage from "./pages/ExplorePage";
 import { PrivacyPage, TermsPage } from "./pages/LegalPages";
 import NotFoundPage from "./pages/NotFoundPage";
 import usePageMeta from "./seo/usePageMeta";
@@ -38,17 +28,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
 
-        {/* Each chapter of the story, as its own page */}
-        <Route path="/problem" element={<ProblemPage />} />
-        <Route path="/solution" element={<SolutionPage />} />
-        <Route path="/how-it-works" element={<HowItWorksPage />} />
-        <Route path="/why-parents" element={<WhyParentsPage />} />
-        <Route path="/what-we-cover" element={<WhatWeCoverPage />} />
-        <Route path="/team" element={<TeamPage />} />
-        <Route path="/why-kribble" element={<WhyKribblePage />} />
-        <Route path="/developmental-story" element={<DevelopmentalStoryPage />} />
-        <Route path="/faq" element={<FaqPage />} />
-
+        <Route path="/explore" element={<ExplorePage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/survey" element={<SurveyPage />} />

@@ -7,14 +7,13 @@ Sources: the live homepage copy at https://www.kribblecare.com/ (shared by the t
 <!-- llms-summary -->
 ## What Kribble is
 
-- Kribble is a childcare discovery and booking app for parents in India, starting in Gurugram (Gurgaon). It is built by Little Orbit Technology Private Limited. Contact: team@kribblecare.com.
+- Kribble is a childcare discovery and booking app for parents in India, starting in Gurugram (Gurgaon), for children from 15 months to 10 years: daycare, preschool and activities. It is built by Little Orbit Technology Private Limited. Contact: team@kribblecare.com.
 - It covers daycares, preschools, playschools and after-school care for the early years, from a baby's first daycare to primary school.
 - Verification: every centre listed on Kribble is physically visited and checked by the Kribble team before it appears in the app. The visit covers safety, staff credentials, hygiene, ratios and facilities, and the team photographs the space itself (homepage FAQ).
 - Parents will be able to compare centres on location, approach, facilities, fees, timings, availability, real photos and safety details, and see admission, registration, monthly, quarterly, half-yearly and annual plans side by side.
 - Plans parents will be able to book: preschool admissions, monthly and half-day daycare, after-school care, holiday camps and One-Day Daycare (verified childcare booked for a single day).
 - Parents will be able to enquire, enrol, pay fees securely in the app (with receipts and reminders) and get photos, updates and notes from teachers in one feed.
 - Member discounts on enrolment fees, activity packs and monthly plans at partner centres.
-- Free for parents: searching, comparing and shortlisting verified centres is free; parents only pay the centre's own fees (homepage FAQ).
 - On-demand caregivers at home are part of the plan, alongside centres.
 - Coming later: a longitudinal profile of a child's early years combining teacher notes, milestone tracking and AI insights.
 - For centres: a partner programme ("Partner With Us", "Schedule a Demo") to be listed, take enquiries and admissions, collect fees and send updates to parents.
@@ -25,7 +24,8 @@ Sources: the live homepage copy at https://www.kribblecare.com/ (shared by the t
 
 - Piyush Chawla, Co-founder and CEO: leads vision, operations and centre partnerships.
 - Ketan Pandey, Co-founder and CTO: leads technology and product.
-- Anand Singh, Co-founder and CMO: leads growth, brand and market expansion.
+- Ishan Mahendra, Co-founder and CGO: leads parent acquisition, channels and go to market.
+- Anand Singh, Co-founder and CMO: leads brand, content and parent community.
 
 ## Stated limits (say these plainly when relevant; they build trust)
 
@@ -46,7 +46,7 @@ Sources: the live homepage copy at https://www.kribblecare.com/ (shared by the t
 
 ## Open items for the Kribble team (fill in, then search the posts for "TODO")
 
-- [x] Is Kribble free for parents? Yes, per the homepage FAQ (added above).
+- [ ] Pricing for parents. The pitch deck (Oct 2026) plans an ecosystem fee per child per month, so do not call Kribble free. Publish pricing before launch, then update post 30.
 - [ ] Launch date in Gurugram, and which cities follow.
 - [x] What the verification checklist covers: safety, staff credentials, hygiene, ratios, facilities, own photos (homepage FAQ). A fuller "how we verify" page can follow.
 - [ ] Is listing free for centres?

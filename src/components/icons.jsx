@@ -192,3 +192,60 @@ export const Close = ({ size = 22 }) => (
     <path d="M18 6L6 18" />
   </Svg>
 );
+
+export const Camera = ({ size }) => (
+  <Svg size={size}>
+    <path d="M4 8h3l2-2.5h6L17 8h3v11H4z" />
+    <circle cx="12" cy="13" r="3.4" />
+  </Svg>
+);
+
+export const Users = ({ size }) => (
+  <Svg size={size}>
+    <circle cx="9" cy="8.5" r="3.2" />
+    <path d="M3.5 19c.6-3.2 2.8-5 5.5-5s4.9 1.8 5.5 5" />
+    <circle cx="17" cy="9.5" r="2.4" />
+    <path d="M16 14.2c2.5.1 4 1.7 4.5 4.3" />
+  </Svg>
+);
+
+export const Utensils = ({ size }) => (
+  <Svg size={size}>
+    <path d="M7 3v8M5 3v5a2 2 0 004 0V3M7 11v10" />
+    <path d="M17 21V3c-2 1.5-3 4-3 7v3h3" />
+  </Svg>
+);
+
+export const MapPin = ({ size }) => (
+  <Svg size={size}>
+    <path d="M12 21s-6.5-5.6-6.5-11a6.5 6.5 0 0113 0c0 5.4-6.5 11-6.5 11z" />
+    <circle cx="12" cy="10" r="2.4" />
+  </Svg>
+);
+
+export const Clock = ({ size }) => (
+  <Svg size={size}>
+    <circle cx="12" cy="12" r="8.5" />
+    <path d="M12 7.5V12l3 2" />
+  </Svg>
+);
+
+export const Star = ({ size }) => (
+  <Svg size={size}>
+    <path d="M12 3.5l2.6 5.3 5.8.8-4.2 4.1 1 5.8L12 16.8l-5.2 2.7 1-5.8-4.2-4.1 5.8-.8z" />
+  </Svg>
+);
+
+export const Smile = ({ size }) => (
+  <Svg size={size}>
+    <circle cx="12" cy="12" r="8.5" />
+    <path d="M8.5 14c.9 1.4 2.1 2 3.5 2s2.6-.6 3.5-2" />
+    <path d="M9 9.5h.01M15 9.5h.01" strokeWidth={2.6} />
+  </Svg>
+);
+
+export const Spark = ({ size }) => (
+  <Svg size={size}>
+    <path d="M12 3v4M12 17v4M3 12h4M17 12h4M5.6 5.6l2.8 2.8M15.6 15.6l2.8 2.8M18.4 5.6l-2.8 2.8M8.4 15.6l-2.8 2.8" />
+  </Svg>
+);

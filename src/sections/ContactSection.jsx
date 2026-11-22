@@ -51,15 +51,12 @@ function ContactSection({ showEyebrow = true }) {
       <div className="k-shell k-contact__grid" data-reveal>
         <div>
           {showEyebrow && <p className="k-eyebrow">Get in touch</p>}
-          <h2 className="k-h2">
-            Childcare you can{" "}
-            <span className="k-accent" style={{ color: "#9b7bff" }}>
-              finally trust.
-            </span>
-          </h2>
+          <h1 className="k-h2">
+            Questions? <span className="k-accent">Ask a real person.</span>
+          </h1>
           <p className="k-lead" style={{ marginTop: 24 }}>
-            Be among the first to find verified childcare near you. Drop us a
-            note and we'll be in touch.
+            Looking for a daycare, preschool or activity in Gurugram, or just
+            curious about Kribble? Write to us and one of the team will reply.
           </p>
 
           <div className="k-contact__mail">

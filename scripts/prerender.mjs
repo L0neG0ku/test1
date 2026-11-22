@@ -57,6 +57,7 @@ function homeStructuredData() {
         areaServed: { "@type": "City", name: "Gurugram" },
         founder: [
           { "@type": "Person", name: "Piyush Chawla", jobTitle: "Co-founder and CEO" },
+          { "@type": "Person", name: "Ishan Mahendra", jobTitle: "Co-founder and CGO" },
           { "@type": "Person", name: "Ketan Pandey", jobTitle: "Co-founder and CTO" },
           { "@type": "Person", name: "Anand Singh", jobTitle: "Co-founder and CMO" },
         ],
@@ -83,7 +84,7 @@ function homeStructuredData() {
         url: `${SITE_URL}/`,
         publisher: { "@id": org },
         description:
-          "Find, compare and book verified daycares, preschools and playschools, from a single day to a full year. Launching first in Gurugram.",
+          "Find, compare and enrol in verified daycares, preschools and activities for children aged 15 months to 10 years, including one-day and hourly care. Launching first in Gurugram.",
       },
       {
         "@type": "FAQPage",

@@ -6,40 +6,8 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://www.kribblecare.com/problem</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.kribblecare.com/solution</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.kribblecare.com/how-it-works</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.kribblecare.com/why-parents</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.kribblecare.com/what-we-cover</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.kribblecare.com/team</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.kribblecare.com/why-kribble</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.kribblecare.com/developmental-story</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.kribblecare.com/faq</loc>
-    <priority>0.8</priority>
+    <loc>https://www.kribblecare.com/explore</loc>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.kribblecare.com/about</loc>

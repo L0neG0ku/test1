@@ -1,13 +1,13 @@
 /* Kribble blog. Edit the variables to match the main site exactly. */
 /* Matched to kribblecare.com (src/styles/kribble.css): brand #7753FF, ink #1B0F33,
-   Playfair Display headings, Inter body, Outfit for UI labels and buttons. */
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Outfit:wght@500;600;700&family=Inter:wght@400;600;700&display=swap");
+   Oswald uppercase headings like the pitch deck, Inter body. */
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;600;700&display=swap");
 :root{
   --bg:#ffffff; --surface:#F6F2FF; --line:#ECE5FF; --text:#1B0F33; --muted:#5B5570;
   --accent:#7753FF; --accent-ink:#ffffff; --link:#5A32DC;
   --font:Inter,"Segoe UI",system-ui,-apple-system,Roboto,Arial,sans-serif;
-  --head:"Playfair Display",Georgia,serif;
-  --ui:Outfit,Inter,system-ui,sans-serif;
+  --head:Oswald,"Arial Narrow",system-ui,sans-serif;
+  --ui:Oswald,Inter,system-ui,sans-serif;
   --mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
 }
 *{box-sizing:border-box}
@@ -68,7 +68,9 @@ tr:last-child td{border-bottom:0}
 .muted{color:var(--muted)}
 @media (max-width:600px){body{font-size:16px}.top nav a:not(.btn){display:none}}
 
-h1,h2,.cta-h{font-family:var(--head);letter-spacing:-.01em}
+h1,h2,.cta-h{font-family:var(--head);font-weight:600;letter-spacing:.005em;text-transform:uppercase}
+.prose h2{font-size:26px}
+.top nav,.btn{text-transform:uppercase;letter-spacing:.06em}
 .brand{display:flex;align-items:center}
 .brand img{display:block;height:30px;width:auto}
 .top nav{font-family:var(--ui)}

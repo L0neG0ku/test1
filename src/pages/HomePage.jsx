@@ -1,33 +1,30 @@
 import Hero from "../sections/Hero";
-import ChapterProblem from "../sections/ChapterProblem";
-import ChapterSolution from "../sections/ChapterSolution";
-import WhyKribble from "../sections/WhyKribble";
-import ChapterHowItWorks from "../sections/ChapterHowItWorks";
-import ChapterWhyParents from "../sections/ChapterWhyParents";
-import DevelopmentalStory from "../sections/DevelopmentalStory";
-import ChapterWhatWeCover from "../sections/ChapterWhatWeCover";
-import ChapterTeam from "../sections/ChapterTeam";
+import Proof from "../sections/Proof";
+import WeVisit from "../sections/WeVisit";
+import HowItWorks from "../sections/HowItWorks";
+import TryADay from "../sections/TryADay";
+import Activities from "../sections/Activities";
 import Faq from "../sections/Faq";
-import ContactSection from "../sections/ContactSection";
+import FinalCta from "../sections/FinalCta";
 import Footer from "../components/Footer";
 import useReveal from "../hooks/useReveal";
 
+/* Short on purpose: one idea per section, in the order a parent's questions
+   come up. Is it safe? Will it make my life easier? Can I try it? What about
+   activities? Then the answers to what's left, and the download. */
 function HomePage() {
   useReveal();
 
   return (
     <>
       <Hero />
-      <ChapterProblem />
-      <ChapterSolution />
-      <WhyKribble />
-      <ChapterHowItWorks />
-      <ChapterWhyParents />
-      <DevelopmentalStory />
-      <ChapterWhatWeCover />
-      <ChapterTeam />
+      <Proof />
+      <WeVisit />
+      <HowItWorks />
+      <TryADay />
+      <Activities />
       <Faq />
-      <ContactSection />
+      <FinalCta />
       <Footer />
     </>
   );

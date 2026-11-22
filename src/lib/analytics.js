@@ -49,6 +49,22 @@ export function trackEvent(name) {
   }
 }
 
+/** A centre search. Only the chosen type and age band are sent; the free-text
+    area stays out of analytics. */
+export function trackSearch(careType, ageBand) {
+  if (typeof window === "undefined") return;
+  const params = { search_term: careType, care_type: careType, age_band: ageBand || "any" };
+  if (typeof window.gtag === "function") {
+    safely(() => window.gtag("event", "search", params));
+  }
+  if (typeof window.fbq === "function") {
+    safely(() => window.fbq("track", "Search", { content_category: careType }));
+  }
+  if (Array.isArray(window.dataLayer)) {
+    safely(() => window.dataLayer.push({ event: "centre_search", ...params }));
+  }
+}
+
 /** A click on a call to action that has no form behind it yet. */
 export function trackCtaClick(ctaName) {
   if (typeof window === "undefined") return;

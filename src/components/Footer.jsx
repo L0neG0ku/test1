@@ -1,18 +1,23 @@
 import { Link } from "react-router-dom";
 import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
-import logo from "../assets/logo-purple.png";
+import logo from "../assets/logo-wordmark.png";
 import { trackCtaClick } from "../lib/analytics";
 
-/* Parent-facing links all point at pages that exist on the site. */
+/* Plain <a> for the blog: it's static HTML outside the React app. */
 const PARENT_LINKS = [
-  { to: "/why-kribble", label: "Why Kribble" },
-  { to: "/what-we-cover", label: "What We Cover" },
-  { to: "/why-parents", label: "Why Parents Love It" },
-  { to: "/faq", label: "FAQ" },
-  { to: "/survey", label: "Take the Survey" },
-  { to: "/about", label: "About Kribble" },
-  // Static pages outside the React app, so rendered as a plain <a>.
-  { href: "/blog/", label: "Blog" },
+  { to: "/explore", label: "Explore centres" },
+  { to: "/#how-it-works", label: "How it works" },
+  { to: "/#one-day", label: "One-day care" },
+  { to: "/#activities", label: "Activities" },
+  { to: "/#faq", label: "FAQ" },
+  { href: "/blog/", label: "Parent guides" },
+];
+
+const COMPANY_LINKS = [
+  { to: "/about", label: "About us" },
+  { to: "/waitlist", label: "Join the waitlist" },
+  { to: "/survey", label: "Take the survey" },
+  { to: "/contact", label: "Contact" },
 ];
 
 /* Centre-facing product does not exist yet, so these are inert for now —
@@ -49,11 +54,11 @@ function Footer() {
         <div className="k-footer__content">
           <div className="k-footer__brand">
             <span className="k-footer__logo">
-              <img src={logo} alt="Kribble" />
+              <img src={logo} alt="Kribble" width="115" height="36" />
             </span>
             <p>
-              A verified discovery platform for daycares and preschools,
-              starting in Gurugram, so every parent can find care they trust.
+              Daycares, preschools and activities for children from 15 months
+              to 10 years, every centre visited in person. Starting in Gurugram.
             </p>
 
             <div className="k-footer__social">
@@ -72,7 +77,7 @@ function Footer() {
           </div>
 
           <div className="k-footer__col">
-            <h4>For Parents</h4>
+            <h3>For Parents</h3>
             {PARENT_LINKS.map((l) =>
               l.href ? (
                 <a key={l.href} href={l.href}>
@@ -87,7 +92,16 @@ function Footer() {
           </div>
 
           <div className="k-footer__col">
-            <h4>For Childcare Centers</h4>
+            <h3>Kribble</h3>
+            {COMPANY_LINKS.map((l) => (
+              <Link key={l.to} to={l.to}>
+                {l.label}
+              </Link>
+            ))}
+          </div>
+
+          <div className="k-footer__col">
+            <h3>For Childcare Centers</h3>
             {CENTRE_LINKS.map((label) => (
               <button
                 key={label}
@@ -111,7 +125,7 @@ function Footer() {
           <nav className="k-footer__legal">
             <Link to="/privacy">Privacy</Link>
             <Link to="/terms">Terms</Link>
-            <Link to="/contact">Contact</Link>
+            <a href="mailto:team@kribblecare.com">team@kribblecare.com</a>
           </nav>
         </div>
       </div>

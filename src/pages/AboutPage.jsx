@@ -1,24 +1,37 @@
 import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
 import useReveal from "../hooks/useReveal";
-import ChapterTeam from "../sections/ChapterTeam";
-import { ArrowRight, ShieldCheck, Chat, Heart } from "../components/icons";
+import { ArrowRight } from "../components/icons";
+import piyush from "../assets/piyush.webp";
+import ishan from "../assets/ishan.webp";
+import ketan from "../assets/ketan.jpg";
+import anand from "../assets/anand.jpg";
 
-const VALUES = [
+/* Roles and backgrounds from the October 2026 pitch deck. */
+const TEAM = [
   {
-    Icon: ShieldCheck,
-    title: "Trust before scale",
-    body: "A centre only goes live on Kribble after someone from our team has actually stood inside it.",
+    name: "Piyush Chawla",
+    role: "Co-founder & CEO",
+    img: piyush,
+    body: "Leads vision, centre partnerships and operations. Grew a family hospitality business tenfold.",
   },
   {
-    Icon: Chat,
-    title: "Honest information",
-    body: "Real photos, real fees, real timings. If we can't confirm it, we don't publish it.",
+    name: "Ishan Mahendra",
+    role: "Co-founder & CGO",
+    img: ishan,
+    body: "Leads how parents find Kribble. Scaled growth at Pocket FM, OfBusiness and Reckitt.",
   },
   {
-    Icon: Heart,
-    title: "Calm by design",
-    body: "Parenting is loud enough. Kribble is built to be quiet, quick and out of your way.",
+    name: "Ketan Pandey",
+    role: "Co-founder & CTO",
+    img: ketan,
+    body: "Leads product, engineering and child-safety tech. Built a school bus tracking app.",
+  },
+  {
+    name: "Anand Singh",
+    role: "Co-founder & CMO",
+    img: anand,
+    body: "Leads brand, content and the Kribble parent community.",
   },
 ];
 
@@ -30,82 +43,70 @@ function AboutPage() {
       <header className="k-pagehead">
         <div className="k-shell">
           <p className="k-eyebrow">About Kribble</p>
-          <h1 className="k-h2" style={{ maxWidth: "17ch" }}>
-            We started Kribble because{" "}
-            <span className="k-dim">
-              finding good childcare shouldn't depend on luck.
-            </span>
+          <h1 className="k-h2" style={{ maxWidth: "18ch" }}>
+            Childcare, simplified. Starting in Gurugram.
           </h1>
         </div>
       </header>
 
       <section className="k-section k-bg-white">
-        <div className="k-shell k-why" data-reveal>
-          <div className="k-why__art">
-            <div className="k-why__img">
-              <img
-                src="/mission.webp"
-                alt="A parent and child together"
-                loading="lazy"
-                decoding="async"
-              />
-            </div>
-          </div>
-
+        <div className="k-shell k-story" data-reveal>
           <div>
-            <h2 className="k-h3" style={{ marginBottom: 22 }}>
-              Our mission
-            </h2>
-            <p className="k-lead" style={{ maxWidth: "52ch" }}>
-              India's childcare search runs on WhatsApp forwards and hope. We
-              are building the verified alternative: a single place where every
-              daycare, preschool and playschool has been physically checked, and
-              where enrolling, paying and staying updated all happen in one calm
-              app.
+            <p>
+              Choosing where your child spends the day is one of the biggest
+              decisions a parent makes. Most of us still make it from word of
+              mouth, scattered listings and a lot of phone calls.
             </p>
-            <p className="k-lead" style={{ maxWidth: "52ch", marginTop: 20 }}>
-              We would rather list ten centres we have personally walked through
-              than a thousand we have not.
+          </div>
+          <div>
+            <p>
+              We spoke to more than 400 parents and visited over 50 centres in
+              Gurugram before building the app. The same things came up every
+              time: no way to know what a centre is really like before visiting,
+              fees that only appear after a call, paperwork for every enrolment,
+              and nothing for the days plans fall apart.
             </p>
-
-            <div className="k-hero__actions">
-              <Link to="/how-it-works" className="k-btn k-btn--primary">
-                See how it works <ArrowRight />
-              </Link>
-              <Link to="/survey" className="k-btn k-btn--ghost">
-                Take the survey
-              </Link>
-            </div>
+            <p>
+              Kribble brings it into one app. Centres our team has visited in
+              person, every fee up front, enrolment in a tap, one-day care when
+              you need it, and activities as your child grows, from 15 months to
+              10 years.
+            </p>
           </div>
         </div>
       </section>
 
       <section className="k-section k-bg-soft">
         <div className="k-shell">
-          <h2 className="k-h2" style={{ maxWidth: "16ch", marginBottom: 56 }}>
-            What we hold ourselves to.
-          </h2>
+          <div className="k-head k-head--center" data-reveal>
+            <p className="k-eyebrow">The team</p>
+            <h2 className="k-h2">The people building Kribble</h2>
+          </div>
 
-          <div className="k-feat-grid" data-reveal-stagger>
-            {VALUES.map(({ Icon, title, body }, i) => (
-              <article className="k-feat-card" key={title}>
-                <div className="k-feat-card__top">
-                  <span className="k-icon-tile">
-                    <Icon size={28} />
-                  </span>
-                  <span className="k-feat-card__num">
-                    {String(i + 1).padStart(2, "0")}
-                  </span>
+          <div className="k-team" data-reveal-stagger>
+            {TEAM.map((m) => (
+              <article className="k-member" key={m.name}>
+                <div className="k-member__photo">
+                  <img src={m.img} alt={m.name} loading="lazy" />
                 </div>
-                <h3 className="k-h3">{title}</h3>
-                <p>{body}</p>
+                <h3>{m.name}</h3>
+                <p className="k-member__role">{m.role}</p>
+                <p>{m.body}</p>
               </article>
             ))}
+          </div>
+
+          <div className="k-hero__actions" style={{ justifyContent: "center", marginTop: 56 }}>
+            <Link to="/waitlist" className="k-btn k-btn--primary">
+              Get early access <ArrowRight />
+            </Link>
+            <Link to="/contact" className="k-btn k-btn--ghost">
+              Talk to us
+            </Link>
           </div>
         </div>
       </section>
 
-      <ChapterTeam />
       <Footer />
     </>
   );

@@ -13,64 +13,24 @@ export const DEFAULT_OG_IMAGE = `${SITE_URL}/blog/og/home.png`;
 
 export const ROUTES = {
   "/": {
-    title: "Kribble: Verified Daycares & Preschools in Gurugram",
+    title: "Kribble: Daycares, Preschools & Activities in Gurugram",
     description:
-      "Find, compare and book verified daycares, preschools and playschools in Gurugram, from a single day to a full year. Join the Kribble waitlist.",
+      "Find, compare and enrol in daycares, preschools and activities in Gurugram for children aged 15 months to 10 years. Every centre visited in person.",
   },
-  "/problem": {
-    title: "Why Finding Childcare Is So Hard | Kribble",
+  "/explore": {
+    title: "Search Daycares, Preschools & Activities | Kribble",
     description:
-      "Scattered listings, hidden fees and no way to check safety before you visit. The problems parents face choosing a daycare or preschool today.",
-  },
-  "/solution": {
-    title: "One App for Verified Childcare | Kribble",
-    description:
-      "Kribble brings verified daycares, preschools and playschools into one app: compare fees and plans, book a day or a year, and get daily updates.",
-  },
-  "/how-it-works": {
-    title: "How Kribble Works: Search to First Morning",
-    description:
-      "Search verified centres near you, compare fees side by side, enrol and pay in the app, then follow your child's day. How Kribble works, step by step.",
-  },
-  "/why-parents": {
-    title: "Why Parents Choose Kribble",
-    description:
-      "Verified centres, real photos, clear fees and updates from your child's teachers in one feed. Why parents in Gurugram are waiting for Kribble.",
-  },
-  "/what-we-cover": {
-    title: "Daycare, Preschool & After-School Care | Kribble",
-    description:
-      "Preschool admissions, monthly and half-day daycare, after-school care, holiday camps and One-Day Daycare. Every stage of your child's early years.",
-  },
-  "/team": {
-    title: "The Team Building Kribble",
-    description:
-      "Meet Piyush Chawla, Ketan Pandey and Anand Singh, the co-founders building Kribble, a verified childcare discovery app starting in Gurugram.",
-  },
-  "/why-kribble": {
-    title: "Why Kribble: Childcare Brought Together",
-    description:
-      "Verified daycares and preschools, transparent fees, flexible plans and member discounts at partner centres, all in one childcare app.",
-  },
-  "/developmental-story": {
-    title: "Your Child's Developmental Story | Kribble",
-    description:
-      "Coming to Kribble: teacher notes and milestones gathered into one picture of your child's early years, from their first day at daycare onwards.",
-  },
-  "/faq": {
-    title: "Kribble FAQ: Fees, Verification, Cities",
-    description:
-      "Is Kribble free for parents? How are centres verified? What is One-Day Daycare? Straight answers to the questions parents ask us most.",
+      "Search verified daycares, preschools, activities and one-day care in Gurugram by your child's age and area. Listings open with the Kribble app.",
   },
   "/about": {
-    title: "About Kribble: Our Mission",
+    title: "About Kribble: The Team Behind the App",
     description:
-      "Kribble is building a verified childcare discovery app so every parent can find care they trust. Starting in Gurugram, other cities to follow.",
+      "Why we're building Kribble, the childcare app for Gurugram parents, and the four co-founders behind it. Daycare, preschool and activities in one app.",
   },
   "/contact": {
     title: "Contact Kribble",
     description:
-      "Questions about Kribble, verified childcare in Gurugram or partnering as a centre? Write to team@kribblecare.com or send us a message here.",
+      "Questions about Kribble, daycares, preschools or activities in Gurugram? Write to team@kribblecare.com or send us a message and the team will reply.",
   },
   "/survey": {
     title: "Help Shape Kribble: Parent & Centre Survey",
@@ -96,7 +56,7 @@ export const ROUTES = {
 
 export const NOT_FOUND = {
   title: "Page not found | Kribble",
-  description: "This page doesn't exist. Head back to Kribble to find verified daycares and preschools in Gurugram.",
+  description: "This page doesn't exist. Head back to Kribble to find daycares, preschools and activities in Gurugram.",
   noindex: true,
 };
 

@@ -95,9 +95,9 @@ While you wait, our [guide to daycare in Gurgaon](/blog/daycare-in-gurgaon-guide
 
 ## Frequently asked questions
 
-### Is Kribble free for parents?
+### How much does Kribble cost for parents?
 
-Yes. Searching, comparing and shortlisting verified centres is free. You only ever pay the centre's own fees, and members get discounts at partner centres.
+We will publish pricing for parents before launch. Whatever you choose, you pay the centre's own fees as usual, and members get discounts at partner centres.
 
 ### When will Kribble launch?
 
